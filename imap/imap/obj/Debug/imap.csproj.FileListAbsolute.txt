@@ -1,0 +1,7 @@
+C:\sandbox\imap\imap\bin\Debug\imap.pdb
+C:\sandbox\imap\imap\bin\Debug\ActiveUp.Net.Common.dll
+C:\sandbox\imap\imap\bin\Debug\ActiveUp.Net.Imap4.dll
+C:\sandbox\imap\imap\obj\Debug\imap.csprojResolveAssemblyReference.cache
+C:\sandbox\imap\imap\obj\Debug\imap.pdb
+C:\sandbox\imap\imap\bin\Debug\imap.exe
+C:\sandbox\imap\imap\obj\Debug\imap.exe
