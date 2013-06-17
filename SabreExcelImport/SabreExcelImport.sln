@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyApiTests", "Symphon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabreExcelImportTests", "SabreExcelImportTests\SabreExcelImportTests.csproj", "{E666D3E4-061A-4DBC-ADBE-29733FD540D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSample", "ServiceSample\ServiceSample.csproj", "{D9A7CB8B-7468-460A-BFA9-522F62A57C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSampleSpecs", "ServiceSampleSpecs\ServiceSampleSpecs.csproj", "{62F98C33-886D-485C-84A8-6CCB4580CD0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{E666D3E4-061A-4DBC-ADBE-29733FD540D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E666D3E4-061A-4DBC-ADBE-29733FD540D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E666D3E4-061A-4DBC-ADBE-29733FD540D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A7CB8B-7468-460A-BFA9-522F62A57C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A7CB8B-7468-460A-BFA9-522F62A57C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A7CB8B-7468-460A-BFA9-522F62A57C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A7CB8B-7468-460A-BFA9-522F62A57C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F98C33-886D-485C-84A8-6CCB4580CD0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F98C33-886D-485C-84A8-6CCB4580CD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F98C33-886D-485C-84A8-6CCB4580CD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F98C33-886D-485C-84A8-6CCB4580CD0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
