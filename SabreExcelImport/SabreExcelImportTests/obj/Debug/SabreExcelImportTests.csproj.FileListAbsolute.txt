@@ -21,3 +21,4 @@ Z:\Downloads\SPL\SabreExcelImport\SabreExcelImportTests\bin\Debug\SymphonySyncAp
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImportTests\bin\Debug\nunit.framework.xml
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImportTests\obj\Debug\SabreExcelImportTests.dll
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImportTests\obj\Debug\SabreExcelImportTests.pdb
+Z:\Downloads\SPL\SabreExcelImport\SabreExcelImportTests\obj\Debug\SabreExcelImportTests.csprojResolveAssemblyReference.cache
