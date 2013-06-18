@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel;
 using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.ServiceTypes;
 
 namespace AviSpl.Vnoc.Symphony.Services.Api
@@ -34,7 +35,17 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
             throw new NotImplementedException();
         }
 
-        public SchedulingResponse SaveMeeting(Conference conference)
+        public SchedulingResponse ProcessMeeting(Conference conference)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ProcessMeetingStatusChange(long confirmationNumber, ScheduleStatus status)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool LogOut()
         {
             throw new NotImplementedException();
         }

@@ -7,3 +7,4 @@ Z:\Downloads\SPL\SabreExcelImport\ServiceSampleTests\obj\Debug\ServiceSampleTest
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleTests\bin\Debug\ServiceSample.exe
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleTests\bin\Debug\ServiceSample.pdb
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleTests\obj\Debug\ServiceSampleTests.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleTests\bin\Debug\SymphonyIm.2.4.dll
