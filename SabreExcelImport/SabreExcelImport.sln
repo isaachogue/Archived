@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSampleSpecs", "Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSampleTests", "ServiceSampleTests\ServiceSampleTests.csproj", "{6FCB4847-114A-454C-B7D2-22917EA64B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRepository", "MailRepository\MailRepository.csproj", "{07EA8F63-BC58-4B98-BFD4-F78CD596F568}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{6FCB4847-114A-454C-B7D2-22917EA64B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FCB4847-114A-454C-B7D2-22917EA64B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FCB4847-114A-454C-B7D2-22917EA64B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EA8F63-BC58-4B98-BFD4-F78CD596F568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EA8F63-BC58-4B98-BFD4-F78CD596F568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EA8F63-BC58-4B98-BFD4-F78CD596F568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EA8F63-BC58-4B98-BFD4-F78CD596F568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

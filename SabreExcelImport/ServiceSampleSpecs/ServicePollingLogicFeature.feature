@@ -4,22 +4,17 @@
 	so that I can open new svm meeting report attachments
 
 Scenario: Service authenticates against a known IMAP email account and checks for new messages
-	Given I have a known IMAP email account
-	When I connect to the account using known credentials
+	Given I have a mail repository with a new message in the inbox
 	Then I should be able to view the new message count
 
 Scenario: Service finds a new message after authetnicating a known IMAP email account
-	Given I have a known IMAP email account
-	When I connect to the account using known credentials
-	And a new message is available in the inbox
+	Given I have a mail repository with a new message in the inbox
 	Then I should be able to view the new message count
 	And the count should be greater than 0
 
 Scenario: Service finds a new message from SVM with an attachment after authetnicating a known IMAP email account
-	Given I have a known IMAP email account
-	When I connect to the account using known credentials
-	And a new message is available in the inbox
-	And the message has an xls attachment 
+	Given I have a mail repository with a new message in the inbox
+	When the message has an xls attachment 
 	And the message is from Sabre Virtual Meetings
 	Then I should be able to view the new message count
 	And the count should be greater than 0

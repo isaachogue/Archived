@@ -75,10 +75,8 @@ namespace ServiceSampleSpecs
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("I have a known IMAP email account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have a mail repository with a new message in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.When("I connect to the account using known credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
  testRunner.Then("I should be able to view the new message count", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -89,17 +87,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void ServiceFindsANewMessageAfterAuthetnicatingAKnownIMAPEmailAccount()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service finds a new message after authetnicating a known IMAP email account", ((string[])(null)));
-#line 11
+#line 10
 this.ScenarioSetup(scenarioInfo);
+#line 11
+ testRunner.Given("I have a mail repository with a new message in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
- testRunner.Given("I have a known IMAP email account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
- testRunner.When("I connect to the account using known credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
- testRunner.And("a new message is available in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
  testRunner.Then("I should be able to view the new message count", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 16
+#line 13
  testRunner.And("the count should be greater than 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -112,23 +106,19 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service finds a new message from SVM with an attachment after authetnicating a kn" +
                     "own IMAP email account", ((string[])(null)));
-#line 18
+#line 15
 this.ScenarioSetup(scenarioInfo);
-#line 19
- testRunner.Given("I have a known IMAP email account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 20
- testRunner.When("I connect to the account using known credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
- testRunner.And("a new message is available in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
- testRunner.And("the message has an xls attachment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 16
+ testRunner.Given("I have a mail repository with a new message in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.When("the message has an xls attachment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
  testRunner.And("the message is from Sabre Virtual Meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 19
  testRunner.Then("I should be able to view the new message count", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 25
+#line 20
  testRunner.And("the count should be greater than 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 21
  testRunner.And("the attachment should be loaded into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -141,15 +131,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service loads an excel attachment into the Sabre Excel Importer and sends created" +
                     " meetings to Symphony", ((string[])(null)));
-#line 28
+#line 23
 this.ScenarioSetup(scenarioInfo);
-#line 29
+#line 24
  testRunner.Given("the Sabre Excel Importer has meetings that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 30
+#line 25
  testRunner.When("the SVM Service Polling Agent Locates these", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 31
+#line 26
  testRunner.And("the Agent sends each one to the Symphony Api", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 32
+#line 27
  testRunner.Then("the Api should return a confirmation number for each created meeting", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -162,17 +152,17 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service loads an excel attachment into the Sabre Excel Importer and failes to sen" +
                     "ds the created meetings to Symphony", ((string[])(null)));
-#line 34
+#line 29
 this.ScenarioSetup(scenarioInfo);
-#line 35
+#line 30
  testRunner.Given("the Sabre Excel Importer has meetings that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 36
+#line 31
  testRunner.When("the SVM Service Polling Agent Locates these", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 37
+#line 32
  testRunner.And("the Agent sends each one to the Symphony Api", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 38
+#line 33
  testRunner.And("the Symphony Api finds conflicts with some of the new meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
+#line 34
  testRunner.Then("the Agent should add these meetings into an issues dictionary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -185,15 +175,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service loads an excel attachment into the Sabre Excel Importer and failes proces" +
                     "s the file", ((string[])(null)));
-#line 41
+#line 36
 this.ScenarioSetup(scenarioInfo);
-#line 42
+#line 37
  testRunner.Given("the Sabre Excel Importer has meetings that were created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 43
+#line 38
  testRunner.When("the SVM Service Polling Agent Locates these", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 44
+#line 39
  testRunner.And("the Agent failes to load the file into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 45
+#line 40
  testRunner.Then("the Agent should add the file into an issues dictionary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
