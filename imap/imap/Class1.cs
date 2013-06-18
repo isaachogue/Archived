@@ -9,6 +9,7 @@ namespace imap
     public class MailRepository
     {
         private Imap4Client _client = null;
+        private string response;
 
         public MailRepository(string mailServer, int port, bool ssl, string login, string password)
         {
@@ -16,8 +17,10 @@ namespace imap
                 Client.ConnectSsl(mailServer, port);
             else
                 Client.Connect(mailServer, port);
-            Client.Login(login, password);
+            response = Client.Login(login, password);
         }
+
+        public string LoginResponse { get { return response; } }
 
         public IEnumerable<Message> GetAllMails(string mailBox)
         {

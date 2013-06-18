@@ -55,7 +55,7 @@ namespace Spec.Mocks
         private SpaceSyncPoint CreateSyncPointFromInt(int i)
         {
             SpaceSyncPoint ssp = new SpaceSyncPoint();
-            ssp.ThirdPartyId = (i+1).ToString();
+            ssp.ThirdPartyId = (i + 1).ToString();
             ssp.SpaceId = Guid.NewGuid();
             ssp.SubscriptionId = string.Empty;
             ssp.Watermark = string.Empty;

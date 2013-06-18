@@ -6,31 +6,37 @@ using System.Threading.Tasks;
 using ActiveUp.Net.Mail;
 namespace MailRepository {
     public class ImapMailRepository : IMailRepository {
+        
         private Imap4Client _client = null;
-        private string _attachmentPath;
+        private string _username = null;
+        private string _password = null;
 
-        public string AttachmentPath {
-            get { return _attachmentPath; }
-        }
+        public string AttachmentPath { get; set; }
 
-        public ImapMailRepository(string mailServer, int port, bool ssl, string login, string password, string path)
+        public ImapMailRepository(string mailServer, int port, bool ssl)
         {
             if (ssl)
                 Client.ConnectSsl(mailServer, port);
             else
                 Client.Connect(mailServer, port);
-            Client.Login(login, password);
-            _attachmentPath = path;
+        }
+
+        public string Authenticate(string username, string password)
+        {
+            this._username = username;
+            this._password = password;
+            return Client.Login(username, password);
         }
 
         public IList<MailMessage> GetUnreadMails(string mailBox)
         {
+            CheckAuthentication();
             List<MailMessage> result = new List<MailMessage>();
 
             IEnumerable<Message> messages = GetMails(mailBox, "UNSEEN").Cast<Message>();
             
             foreach (Message email in messages) {
-                List<Attachment> attachments = LoadAttachments(_attachmentPath, email.Attachments);
+                List<Attachment> attachments = LoadAttachments(email.Attachments);
                 string from = email.From.Email;
                 string text = email.BodyText.TextStripped;
                 result.Add(new MailMessage(from, text, attachments));
@@ -38,12 +44,12 @@ namespace MailRepository {
             return result;
         }
 
-        private List<Attachment> LoadAttachments(string path, AttachmentCollection attachments) {
+        private List<Attachment> LoadAttachments(AttachmentCollection attachments) {
             List<Attachment> results = new List<Attachment>();
             foreach (MimePart mimePart in attachments) {
                 try {
 
-                    string filePath = path.TrimEnd('\\') + "\\" + mimePart.Filename;
+                    string filePath = this.AttachmentPath.TrimEnd('\\') + "\\" + mimePart.Filename;
                    
                     mimePart.StoreToFile(filePath);
                     results.Add(new Attachment(filePath));
@@ -67,9 +73,18 @@ namespace MailRepository {
 
         private MessageCollection GetMails(string mailBox, string searchPhrase)
         {
+            CheckAuthentication();
             Mailbox mails = Client.SelectMailbox(mailBox);
             MessageCollection messages = mails.SearchParse(searchPhrase);
             return messages;
+        }
+
+        private void CheckAuthentication()
+        {
+            if (this._username == null || this._password == null)
+            {
+                throw new Exception("Authenticate must be called with valid credentials");
+            }
         }
 
     }

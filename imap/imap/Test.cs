@@ -20,6 +20,7 @@ namespace imap
                     }
                 }
             }
+            Console.WriteLine("Login Response "+rep.LoginResponse);
             Console.Read();
         }
     }

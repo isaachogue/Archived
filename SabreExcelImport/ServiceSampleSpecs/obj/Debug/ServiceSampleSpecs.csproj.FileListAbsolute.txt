@@ -26,3 +26,8 @@ Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\Moq.pdb
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\Moq.xml
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\ServiceSample.exe
 Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\ServiceSample.pdb
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\SabreExcelImport.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\SymphonySyncApi.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\SymphonyIm.2.4.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\SabreExcelImport.pdb
+Z:\Downloads\SPL\SabreExcelImport\ServiceSampleSpecs\bin\Debug\SymphonySyncApi.pdb

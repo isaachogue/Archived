@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using AutoMoq;
+using AviSpl.Vnoc.Symphony.Services.Api;
 using MailRepository;
 using Moq;
 using NUnit.Framework;
+using Office.Framework.Excel;
+using SabreExcelImport;
 using ServiceSample;
 using TechTalk.SpecFlow;
 
@@ -89,13 +93,18 @@ namespace ServiceSampleSpecs.StepDefinitions
         [Then(@"the count should be greater than (.*)")]
         public void ThenTheCountShouldBeGreaterThan(int p0)
         {
-            ScenarioContext.Current.Pending();
+            Assert.IsTrue(_sut.GetUnreadMails("INBOX").Count > 0);
         }
         
         [Then(@"the attachment should be loaded into the Sabre Excel Importer")]
         public void ThenTheAttachmentShouldBeLoadedIntoTheSabreExcelImporter()
         {
-            ScenarioContext.Current.Pending();
+            MeetingReport _report;
+            ExcelAdapter ea = new ExcelAdapter();
+            ea.Load("");
+            DataSet _dsReport = ea.DataSource;
+
+            _report = new MeetingReport(_dsReport, new SymphonySyncApi(null));
         }
         
         [Then(@"the Api should return a confirmation number for each created meeting")]

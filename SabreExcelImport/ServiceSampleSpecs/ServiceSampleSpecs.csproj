@@ -93,10 +93,21 @@
       <Project>{07ea8f63-bc58-4b98-bfd4-f78cd596f568}</Project>
       <Name>MailRepository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SabreExcelImport\SabreExcelImport.csproj">
+      <Project>{45bda9b5-ddc7-43be-bcd2-6de11ef838e8}</Project>
+      <Name>SabreExcelImport</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServiceSample\ServiceSample.csproj">
       <Project>{d9a7cb8b-7468-460a-bfa9-522f62a57c18}</Project>
       <Name>ServiceSample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SymphonyApi\SymphonyApi.csproj">
+      <Project>{ca1bd301-a78e-4b66-bb0b-dc211dc096b7}</Project>
+      <Name>SymphonyApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

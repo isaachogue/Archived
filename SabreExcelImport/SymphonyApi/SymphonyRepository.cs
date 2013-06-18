@@ -13,8 +13,8 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
     {
 
         string _clientKey;
-        string _name;
         string _frameworkUrl;
+        string _name;
 
         public SymphonyRepository()
         {
@@ -23,12 +23,17 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
 
         public SpaceSyncPoint FindRoomSyncPoint(string ThirdPartyId, string enterpriseSystemName)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public SpaceSyncPoint FindRoomSyncPoint(Guid SpaceId)
         {
-            throw new NotImplementedException();
+            return null;
+        }
+
+        public ConferenceSyncPoint FindConferenceSyncPoint(string ThirdPartyId, string enterpriseSystemName)
+        {
+            return null;
         }
 
         public object ContactRestfulUri(string Uri)
@@ -61,12 +66,6 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
                 }
             }
             return result;
-        }
-
-
-        public ConferenceSyncPoint FindConferenceSyncPoint(string ThirdPartyId, string enterpriseSystemName)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -49,6 +49,16 @@
     <None Include="App.config" />
     <None Include="Samples\out.xls" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SabreExcelImport\SabreExcelImport.csproj">
+      <Project>{45bda9b5-ddc7-43be-bcd2-6de11ef838e8}</Project>
+      <Name>SabreExcelImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SymphonyApi\SymphonyApi.csproj">
+      <Project>{ca1bd301-a78e-4b66-bb0b-dc211dc096b7}</Project>
+      <Name>SymphonyApi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
