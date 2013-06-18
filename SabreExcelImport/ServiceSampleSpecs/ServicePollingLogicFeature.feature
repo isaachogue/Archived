@@ -22,15 +22,13 @@ Scenario: Service finds a new message from SVM with an attachment after authetni
 
 Scenario: Service loads an excel attachment into the Sabre Excel Importer and sends created meetings to Symphony
 	Given the Sabre Excel Importer has meetings that were created
-	When the SVM Service Polling Agent Locates these
-	And the Agent sends each one to the Symphony Api
-	Then the Api should return a confirmation number for each created meeting
+	When the Agent processes these
+	Then the Agent should have a confirmation number for each created meeting
 
 Scenario: Service loads an excel attachment into the Sabre Excel Importer and failes to sends the created meetings to Symphony
 	Given the Sabre Excel Importer has meetings that were created
-	When the SVM Service Polling Agent Locates these
-	And the Agent sends each one to the Symphony Api
-	And the Symphony Api finds conflicts with some of the new meetings
+	When the Symphony platform has conflicts with some of the new meetings
+	And the Agent processes these
 	Then the Agent should add these meetings into an issues dictionary
 
 Scenario: Service loads an excel attachment into the Sabre Excel Importer and failes process the file

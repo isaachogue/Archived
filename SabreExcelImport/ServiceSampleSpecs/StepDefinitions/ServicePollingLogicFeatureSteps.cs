@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using AutoMoq;
 using AviSpl.Vnoc.Symphony.Services.Api;
+using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.ServiceTypes;
 using MailRepository;
-using Moq;
 using NUnit.Framework;
 using Office.Framework.Excel;
 using SabreExcelImport;
@@ -22,11 +21,21 @@ namespace ServiceSampleSpecs.StepDefinitions
         SvmServiceAgent _agent;
         MailMessage _message;
         IMailRepository _sut;
+        SymphonyRepository _repository;
+        MeetingReport _meetings;
         
         [Given(@"the Sabre Excel Importer has meetings that were created")]
         public void GivenTheSabreExcelImporterHasMeetingsThatWereCreated()
         {
+            mocker.GetMock<MeetingReport>()
+                .Setup(mr => mr.Meetings)
+                .Returns(CreateMeetings());
             ScenarioContext.Current.Pending();
+        }
+
+        private List<Conference> CreateMeetings()
+        {
+            return new List<Conference>();
         }
         
         [Given(@"I have a mail repository with a new message in the inbox")]
@@ -47,15 +56,15 @@ namespace ServiceSampleSpecs.StepDefinitions
         [When(@"the message has an xls attachment")]
         public void WhenTheMessageHasAnXlsAttachment()
         {
-            List<Attachment> attachments = new List<Attachment>();
-            attachments.Add(new Attachment(@"Z:\Downloads\SPL\SabreExcelImport\ServiceSample\Samples\out.xls"));
+            List<MailRepository.Attachment> attachments = new List<MailRepository.Attachment>();
+            attachments.Add(new MailRepository.Attachment(@"Z:\Downloads\SPL\SabreExcelImport\ServiceSample\Samples\out.xls"));
             _message = new MailMessage(_message.From, _message.Body, attachments);
         }
         
         [When(@"the message is from Sabre Virtual Meetings")]
         public void WhenTheMessageIsFromSabreVirtualMeetings()
         {
-            _agent = new SvmServiceAgent();
+            _agent = new SvmServiceAgent(new List<Conference>());
             _agent.EmailDomain = "sabrevm.com";
             _message = new MailMessage("somewhere@"+_agent.EmailDomain, _message.Body, _message.Attachments);
         }
@@ -63,27 +72,29 @@ namespace ServiceSampleSpecs.StepDefinitions
         [When(@"the SVM Service Polling Agent Locates these")]
         public void WhenTheSVMServicePollingAgentLocatesThese()
         {
-            ScenarioContext.Current.Pending();
+            _agent = new SvmServiceAgent(_meetings.Meetings);
         }
-        
-        [When(@"the Agent sends each one to the Symphony Api")]
-        public void WhenTheAgentSendsEachOneToTheSymphonyApi()
+
+        [When(@"the Symphony platform has conflicts with some of the new meetings")]
+        public void WhenTheSymphonyPlatformHasConflictsWithSomeOfTheNewMeetings()
         {
-            ScenarioContext.Current.Pending();
+            mocker.GetMock<ISymphonyApi>()
+                .Setup(api => api.SaveMeeting(_meetings.Meetings[0]))
+                .Returns(new SchedulingResponse("Conflict", Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.SymphonyErrorType.ScheduleConflict));
         }
-        
-        [When(@"the Symphony Api finds conflicts with some of the new meetings")]
-        public void WhenTheSymphonyApiFindsConflictsWithSomeOfTheNewMeetings()
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
+
         [When(@"the Agent failes to load the file into the Sabre Excel Importer")]
         public void WhenTheAgentFailesToLoadTheFileIntoTheSabreExcelImporter()
         {
             ScenarioContext.Current.Pending();
         }
-        
+
+        [When(@"the Agent processes these")]
+        public void WhenTheAgentProcessesThese()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
         [Then(@"I should be able to view the new message count")]
         public void ThenIShouldBeAbleToViewTheNewMessageCount()
         {
@@ -101,28 +112,29 @@ namespace ServiceSampleSpecs.StepDefinitions
         {
             MeetingReport _report;
             ExcelAdapter ea = new ExcelAdapter();
-            ea.Load("");
+            ea.Load(_message.Attachments[0].FolderLocation);
             DataSet _dsReport = ea.DataSource;
-
-            _report = new MeetingReport(_dsReport, new SymphonySyncApi(null));
+            _report = new MeetingReport(_dsReport, new SymphonySyncApi(new SymphonyRepository()));
+            Assert.IsNotNull(_report.Meetings);
         }
-        
-        [Then(@"the Api should return a confirmation number for each created meeting")]
-        public void ThenTheApiShouldReturnAConfirmationNumberForEachCreatedMeeting()
+
+        [Then(@"the Agent should have a confirmation number for each created meeting")]
+        public void ThenTheAgentShouldHaveAConfirmationNumberForEachCreatedMeeting()
         {
             ScenarioContext.Current.Pending();
         }
-        
+
         [Then(@"the Agent should add these meetings into an issues dictionary")]
         public void ThenTheAgentShouldAddTheseMeetingsIntoAnIssuesDictionary()
         {
             ScenarioContext.Current.Pending();
         }
-        
+
         [Then(@"the Agent should add the file into an issues dictionary")]
         public void ThenTheAgentShouldAddTheFileIntoAnIssuesDictionary()
         {
             ScenarioContext.Current.Pending();
         }
+        
     }
 }

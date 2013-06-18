@@ -23,17 +23,17 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
 
         public SpaceSyncPoint FindRoomSyncPoint(string ThirdPartyId, string enterpriseSystemName)
         {
-            return null;
+            return new SpaceSyncPoint();
         }
 
         public SpaceSyncPoint FindRoomSyncPoint(Guid SpaceId)
         {
-            return null;
+            return new SpaceSyncPoint();
         }
 
         public ConferenceSyncPoint FindConferenceSyncPoint(string ThirdPartyId, string enterpriseSystemName)
         {
-            return null;
+            return new ConferenceSyncPoint();
         }
 
         public object ContactRestfulUri(string Uri)
