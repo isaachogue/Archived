@@ -10,7 +10,6 @@ using Moq;
 using NUnit.Framework;
 using Office.Framework.Excel;
 using SabreExcelImport;
-using ServiceSample;
 using TechTalk.SpecFlow;
 
 namespace ServiceSampleSpecs.StepDefinitions
@@ -20,10 +19,9 @@ namespace ServiceSampleSpecs.StepDefinitions
     {
         private AutoMoqer mocker = new AutoMoqer();
 
-        SvmServiceAgent _agent;
+        ISyncAgent _agent;
         MailMessage _message;
         IMailRepository _mailRepository;
-        ISymphonySyncApi _api;
         Dictionary<string, SchedulingResponse> _agentProcessingResponse;
         List<Conference> _meetings;
                 
@@ -71,16 +69,20 @@ namespace ServiceSampleSpecs.StepDefinitions
         [When(@"the Symphony platform has conflicts with some of the new meetings")]
         public void WhenTheSymphonyPlatformHasConflictsWithSomeOfTheNewMeetings()
         {
+            Dictionary<string, SchedulingResponse> results = new Dictionary<string, SchedulingResponse>();
+            string from = _agent.EmailDomain;
+
             mocker.GetMock<ISyncAgent>()
                 .Setup(agent => agent.Results)
-                .Returns(new SchedulingResponse("Conflict", Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.SymphonyErrorType.ScheduleConflict));
-            _api = mocker.Resolve<ISymphonySyncApi>();
+                .Returns(results);
+            _agent = mocker.Resolve<ISyncAgent>();
+            _agent.EmailDomain = from;
         }
 
         [When(@"the Agent processes these")]
         public void WhenTheAgentProcessesThese()
         {
-            _agentProcessingResponse = _agent.ProcessMeetingsByStatus(_meetings);
+            _agentProcessingResponse = _agent.ProcessMeetings(_agent.EmailDomain, _meetings);
         }
 
         [Then(@"I should be able to view the new message count")]

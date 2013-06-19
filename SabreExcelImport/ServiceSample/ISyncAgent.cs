@@ -6,8 +6,8 @@ namespace AviSpl.Vnoc.Symphony.Services.Sync
 {
     public interface ISyncAgent
     {
-        public string EmailDomain { get; set; }
-        public Dictionary<string, SchedulingResponse> Results { get; }
+        string EmailDomain { get; set; }
+        Dictionary<string, SchedulingResponse> Results { get; }
         Dictionary<string, SchedulingResponse> ProcessMeetings(string from, List<Conference> meetings);
     }
 }
