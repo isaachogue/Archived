@@ -9,10 +9,25 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
 {
     public class SymphonySyncApi : ISymphonySyncApi
     {
-        ISymphonyRepository _repository;
+
+        private ISymphonyRepository _repository;
+        private Session _session;
+
         public SymphonySyncApi(ISymphonyRepository repository)
         {
             this._repository = repository;
+        }
+
+        public Session Authentication
+        {
+            get
+            {
+                if (_session == null)
+                {
+                    _session = new Session();
+                }
+                return _session;
+            }
         }
 
         public SpaceSyncPoint GetRoomSyncPoint(string ThirdPartyId, string enterpriseSystemName)
@@ -30,19 +45,27 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
             return _repository.FindConferenceSyncPoint(ThirdPartyId, enterpriseSystemName);
         }
 
-        public Guid Authenticate(string username, string password, string domain)
+        public Session Authenticate(string username, string password, string domain)
         {
-            throw new NotImplementedException();
+            this._session = _repository.Login(username, password, domain);
+            return _session;
         }
 
         public SchedulingResponse ProcessMeeting(Conference conference)
         {
-            throw new NotImplementedException();
-        }
+            SchedulingResponse response;
 
-        public bool ProcessMeetingStatusChange(long confirmationNumber, ScheduleStatus status)
-        {
-            throw new NotImplementedException();
+            if (conference.Status == ScheduleStatus.Cancelled || conference.Status == ScheduleStatus.Deleted)
+            {
+                response = new SchedulingResponse();
+                response.IsError = _repository.SetConferenceStatus(conference.ConfirmationNumber, conference.Status);
+                response.Error = (response.IsError) ? "Failed to modify the meeting status to " + conference.Status.ToString() : string.Empty;
+            }
+            else
+            {
+                response = _repository.SaveConference(conference);
+            }
+            return response;
         }
 
         public bool LogOut()

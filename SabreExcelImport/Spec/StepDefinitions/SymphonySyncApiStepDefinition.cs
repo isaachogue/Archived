@@ -28,7 +28,6 @@ namespace Spec.StepDefinitions
         {
             this._enterpriseSystem = System;
             _api = new SymphonySyncApi(_repository);
-            //_api.Authenticate(string.Empty, string.Empty, string.Empty);
         }
 
         [When(@"I request the sync point from the Symphony Repository Service with (.*)")]

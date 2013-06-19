@@ -55,34 +55,9 @@ namespace AviSpl.Vnoc.Symphony.Services.Sync
         {
             foreach (Conference meeting in meetings)
             {
-                SchedulingResponse response;
-                if (meeting.Status == ScheduleStatus.Cancelled || meeting.Status == ScheduleStatus.Deleted)
-                {
-                    bool isSuccess = this._api.ProcessMeetingStatusChange(meeting.ConfirmationNumber, meeting.Status);
-                    response = CreateResponse(isSuccess, meeting.ConfirmationNumber, meeting.Status);
-                }
-                else
-                {
-                    response = this._api.ProcessMeeting(meeting);
-                }
+                SchedulingResponse response = this._api.ProcessMeeting(meeting);
                 AddResponseToResults(meeting.ThirdPartyConferenceId, response);
             }
-        }
-
-        private SchedulingResponse CreateResponse(bool isSuccessful, long confirmationNumber, ScheduleStatus status)
-        {
-            SchedulingResponse response = new SchedulingResponse();
-            if (isSuccessful)
-            {
-                response.Error = string.Empty;
-                response.ErrorType = SymphonyErrorType.None;
-            }
-            else
-            {
-                response.ErrorType = SymphonyErrorType.IncompleteMeetingRequest;
-                response.Error = "Failed to modify the meeting status to " + status.ToString();
-            }
-            return response;
         }
 
         private void AddResponseToResults(string thirdPartyId, SchedulingResponse response)

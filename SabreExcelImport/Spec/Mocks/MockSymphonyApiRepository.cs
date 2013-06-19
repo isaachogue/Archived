@@ -33,16 +33,11 @@ namespace Spec.Mocks
             return _spaceSyncPoints.Find(ssp => ssp.SpaceId == SpaceId);
         }
 
-
         public ConferenceSyncPoint FindConferenceSyncPoint(string ThirdPartyId, string enterpriseSystemName)
         {
             return _conferenceSyncPoints.Find(csp => csp.ThirdPartyId == ThirdPartyId && csp.ThirdPartyName == enterpriseSystemName);
         }
 
-        public Guid Authenticate(string username, string password, string domain)
-        {
-            return Guid.NewGuid();
-        }
         public void InitializeRooms(int SyncedRooms)
         {
             for (int i = 0; i < SyncedRooms; ++i)
@@ -81,7 +76,13 @@ namespace Spec.Mocks
             }
         }
 
-        public SchedulingResponse SaveMeeting(Conference conference)
+        public Session Login(string username, string password, string domain)
+        {
+            return new Session();
+        }
+
+
+        public SchedulingResponse SaveConference(Conference conference)
         {
             SchedulingResponse response = new SchedulingResponse();
             response.ConfirmationNumber = conference.ConfirmationNumber;
@@ -92,6 +93,11 @@ namespace Spec.Mocks
             response.Error = string.Empty;
 
             return response;
+        }
+
+        public bool SetConferenceStatus(long confirmationNumber, Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.ScheduleStatus status)
+        {
+            throw new NotImplementedException();
         }
     }
 }

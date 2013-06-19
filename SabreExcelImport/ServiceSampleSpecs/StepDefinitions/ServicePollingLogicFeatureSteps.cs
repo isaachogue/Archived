@@ -4,6 +4,7 @@ using System.Data;
 using AutoMoq;
 using AviSpl.Vnoc.Symphony.Services.Api;
 using AviSpl.Vnoc.Symphony.Services.Sync;
+using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel;
 using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.ServiceTypes;
 using MailRepository;
 using Moq;
@@ -66,17 +67,46 @@ namespace ServiceSampleSpecs.StepDefinitions
             _message = new MailMessage("somewhere@"+_agent.EmailDomain, _message.Body, _message.Attachments);
         }
 
-        [When(@"the Symphony platform has conflicts with some of the new meetings")]
-        public void WhenTheSymphonyPlatformHasConflictsWithSomeOfTheNewMeetings()
+        [When(@"the Symphony platform has (.*) with some of the new meetings")]
+        public void WhenTheSymphonyPlatformHasWithSomeOfTheNewMeetings(int conflicts)
         {
-            Dictionary<string, SchedulingResponse> results = new Dictionary<string, SchedulingResponse>();
+            Dictionary<string, SchedulingResponse> results = GenerateResults(conflicts);
             string from = _agent.EmailDomain;
 
             mocker.GetMock<ISyncAgent>()
-                .Setup(agent => agent.Results)
+                .Setup(agent => agent.ProcessMeetings(_agent.EmailDomain, _meetings))
                 .Returns(results);
             _agent = mocker.Resolve<ISyncAgent>();
             _agent.EmailDomain = from;
+        }
+
+        private Dictionary<string, SchedulingResponse> GenerateResults(int conflicts)
+        {
+            Dictionary<string, SchedulingResponse> results = new Dictionary<string, SchedulingResponse>();
+
+            int meetingConflicts = (conflicts > _meetings.Count) ? _meetings.Count : conflicts;
+            for (int i = 0; i < meetingConflicts; ++i)
+            {
+                SchedulingResponse response = CreateSchedulingResponse(true);
+                results.Add(_meetings[i].ThirdPartyConferenceId, response);
+            }
+
+            for (int i = _meetings.Count - 1; i >= meetingConflicts; i--)
+            {
+                SchedulingResponse response = CreateSchedulingResponse(false);
+                results.Add(_meetings[i].ThirdPartyConferenceId, response);
+            }
+            return results;
+        }
+
+        private SchedulingResponse CreateSchedulingResponse(bool isConflict)
+        {
+            SchedulingResponse response = new SchedulingResponse();
+            response.IsError = !isConflict;
+            response.ErrorType = (isConflict) ? SymphonyErrorType.ScheduleConflict : SymphonyErrorType.None;
+            response.Error = (isConflict) ? "Schedule Conflict" : string.Empty;
+            response.ConfirmationNumber = (isConflict) ? 0 : 1;
+            return response;
         }
 
         [When(@"the Agent processes these")]
@@ -97,18 +127,16 @@ namespace ServiceSampleSpecs.StepDefinitions
             Assert.IsTrue(_mailRepository.GetUnreadMails("INBOX").Count > 0);
         }
 
-        [Then(@"the Agent should have a confirmation number for each created meeting")]
-        public void ThenTheAgentShouldHaveAConfirmationNumberForEachCreatedMeeting()
+        [Then(@"the Agent should have a confirmation number for each meeting without a conflict")]
+        public void ThenTheAgentShouldHaveAConfirmationNumberForEachMeetingWithoutAConflict()
         {
             foreach (Conference meeting in _meetings)
             {
                 if (_agentProcessingResponse.ContainsKey(meeting.ThirdPartyConferenceId))
                 {
-                    Assert.IsTrue(_agentProcessingResponse[meeting.ThirdPartyConferenceId].ConfirmationNumber > 0);
-                }
-                else
-                {
-                    Assert.Fail("Third Party Id not located for meeting: " + meeting.ThirdPartyConferenceId + " " + meeting.Title);
+                    SchedulingResponse response = _agentProcessingResponse[meeting.ThirdPartyConferenceId];
+                    bool shouldBeConflict = (response.ConfirmationNumber == 0);
+                    Assert.AreEqual(response.IsError, shouldBeConflict);
                 }
             }
         }

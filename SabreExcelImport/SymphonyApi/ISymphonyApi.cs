@@ -9,9 +9,10 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
 {
     public interface ISymphonyApi
     {
-        Guid Authenticate(string username, string password, string domain);
+        Session Authentication { get; }
+        Session Authenticate(string username, string password, string domain);
         bool LogOut();
+
         SchedulingResponse ProcessMeeting(Conference conference);
-        bool ProcessMeetingStatusChange(long confirmationNumber, ScheduleStatus status);
     }
 }

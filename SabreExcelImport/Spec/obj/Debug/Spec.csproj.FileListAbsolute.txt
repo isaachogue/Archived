@@ -53,6 +53,6 @@ Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Microsoft.Practices.Unity.Inter
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Moq.pdb
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Moq.xml
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\nunit.framework.xml
-Z:\Downloads\SPL\SabreExcelImport\Spec\obj\Debug\Spec.csprojResolveAssemblyReference.cache
 Z:\Downloads\SPL\SabreExcelImport\Spec\obj\Debug\Spec.dll
 Z:\Downloads\SPL\SabreExcelImport\Spec\obj\Debug\Spec.pdb
+Z:\Downloads\SPL\SabreExcelImport\Spec\obj\Debug\Spec.csprojResolveAssemblyReference.cache

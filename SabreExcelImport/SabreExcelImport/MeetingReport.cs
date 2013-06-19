@@ -79,6 +79,7 @@ namespace SabreExcelImport
             c.CustomFormResponses = new List<FormFieldResponse>();
             c.IsPrivate = false;
             c.Notes = meeting.Id;
+            c.ThirdPartyConferenceId = meeting.Id;
             c.Owner = meeting.HostEmail;
             c.Participants = new List<Participant>();
             c.Requestor = meeting.CreatorUserId;

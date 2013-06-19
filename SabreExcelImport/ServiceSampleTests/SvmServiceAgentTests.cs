@@ -10,12 +10,13 @@ namespace ServiceSampleTests {
     [TestFixture]
     public class SvmServiceAgentTests {
 
-        AutoMoq mocker = new AutoMoq();
+        AutoMoq.AutoMoqer mocker = new AutoMoq.AutoMoqer();
+        ISyncAgent _sut;
 
-        SvmAgent _sut;
         [TestFixtureSetUp]
         public void setup() {
-            _sut = ; 
+            mocker.GetMock<ISyncAgent>();
+            _sut = mocker.Resolve<ISyncAgent>();
         }
         [Test]
         public void SvmServiceAgent_has_a_property_called_svm_email_domain()

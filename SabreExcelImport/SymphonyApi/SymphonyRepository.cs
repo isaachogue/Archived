@@ -6,6 +6,8 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Configuration;
 using System.Net;
+using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel.ServiceTypes;
+using Iformata.Vnoc.Symphony.Enterprise.Data.InformationModel;
 
 namespace AviSpl.Vnoc.Symphony.Services.Api
 {
@@ -19,6 +21,8 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
         public SymphonyRepository()
         {
             this._clientKey = ConfigurationManager.AppSettings[""];
+            this._frameworkUrl = ConfigurationManager.AppSettings[""];
+            this._name = ConfigurationManager.AppSettings[""];
         }
 
         public SpaceSyncPoint FindRoomSyncPoint(string ThirdPartyId, string enterpriseSystemName)
@@ -36,7 +40,22 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
             return new ConferenceSyncPoint();
         }
 
-        public object ContactRestfulUri(string Uri)
+        public Session Login(string username, string password, string domain)
+        {
+            return new Session();
+        }
+
+        public SchedulingResponse SaveConference(Conference c)
+        {
+            return new SchedulingResponse();
+        }
+
+        public bool SetConferenceStatus(long confirmationNumber, ScheduleStatus status)
+        {
+            return false;
+        }
+
+        private object TryContactingRestfulUri(string Uri)
         {
             object result = null;
             using (HttpClient httpClient = new HttpClient())
@@ -58,7 +77,7 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
                 }
                 catch (Exception ex)
                 {
-
+                    throw ex;
                 }
                 finally
                 {
