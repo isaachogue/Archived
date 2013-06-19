@@ -42,7 +42,7 @@ namespace AviSpl.Vnoc.Symphony.Services.Sync
 
         private void TryVerifyingEmailDomain(string from)
         {
-            if (EmailDomain != string.Empty)
+            if (!string.IsNullOrEmpty(EmailDomain))
             {
                 if (from.Contains(EmailDomain) != true)
                 {

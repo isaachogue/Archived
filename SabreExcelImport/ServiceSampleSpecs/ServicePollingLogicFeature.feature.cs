@@ -115,10 +115,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 18
  testRunner.And("the attachment is loaded into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 19
- testRunner.And("the message is from Sabre Virtual Meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
  testRunner.Then("I should be able to view the new message count", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 21
+#line 20
  testRunner.And("the count should be greater than 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -127,27 +125,23 @@ this.ScenarioSetup(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Service loads an excel attachment into the Sabre Excel Importer and sends created" +
             " meetings to Symphony")]
-        [NUnit.Framework.TestCaseAttribute("0", null)]
-        [NUnit.Framework.TestCaseAttribute("1", null)]
-        public virtual void ServiceLoadsAnExcelAttachmentIntoTheSabreExcelImporterAndSendsCreatedMeetingsToSymphony(string cONFLICTS, string[] exampleTags)
+        public virtual void ServiceLoadsAnExcelAttachmentIntoTheSabreExcelImporterAndSendsCreatedMeetingsToSymphony()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service loads an excel attachment into the Sabre Excel Importer and sends created" +
-                    " meetings to Symphony", exampleTags);
-#line 23
+                    " meetings to Symphony", ((string[])(null)));
+#line 22
 this.ScenarioSetup(scenarioInfo);
-#line 24
+#line 23
  testRunner.Given("I have a mail repository with a new message in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 25
+#line 24
  testRunner.When("the message has an xls attachment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 26
+#line 25
  testRunner.And("the attachment is loaded into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+ testRunner.And("the Symphony platform has no conflicts for the new meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
- testRunner.And("the message is from Sabre Virtual Meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
- testRunner.And(string.Format("the Symphony platform has {0} with some of the new meetings", cONFLICTS), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 29
  testRunner.And("the Agent processes these", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 28
  testRunner.Then("the Agent should have a confirmation number for each meeting without a conflict", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -160,19 +154,17 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service loads an excel attachment into the Sabre Excel Importer and failes proces" +
                     "s the file", ((string[])(null)));
-#line 36
+#line 30
 this.ScenarioSetup(scenarioInfo);
-#line 37
+#line 31
  testRunner.Given("I have a mail repository with a new message in the inbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 38
+#line 32
  testRunner.When("the message has an xls attachment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 39
+#line 33
  testRunner.And("the attachment is loaded into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 40
- testRunner.And("the message is from Sabre Virtual Meetings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
+#line 34
  testRunner.And("the Agent failes to load the file into the Sabre Excel Importer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
+#line 35
  testRunner.Then("the Agent should add the file into an issues dictionary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

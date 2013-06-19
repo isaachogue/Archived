@@ -16,28 +16,21 @@ Scenario: Service finds a new message from SVM with an attachment after authetni
 	Given I have a mail repository with a new message in the inbox
 	When the message has an xls attachment 
 	And the attachment is loaded into the Sabre Excel Importer
-	And the message is from Sabre Virtual Meetings
 	Then I should be able to view the new message count
 	And the count should be greater than 0
 
-Scenario Outline: Service loads an excel attachment into the Sabre Excel Importer and sends created meetings to Symphony
+Scenario: Service loads an excel attachment into the Sabre Excel Importer and sends created meetings to Symphony
 	Given I have a mail repository with a new message in the inbox
 	When the message has an xls attachment 
 	And the attachment is loaded into the Sabre Excel Importer
-	And the message is from Sabre Virtual Meetings
-	And the Symphony platform has <CONFLICTS> with some of the new meetings
+	And the Symphony platform has no conflicts for the new meetings
 	And the Agent processes these
 	Then the Agent should have a confirmation number for each meeting without a conflict
-	Examples: 
-	| CONFLICTS |
-	| 0         |
-	| 1         |
 
 Scenario: Service loads an excel attachment into the Sabre Excel Importer and failes process the file
 	Given I have a mail repository with a new message in the inbox
 	When the message has an xls attachment 
 	And the attachment is loaded into the Sabre Excel Importer
-	And the message is from Sabre Virtual Meetings
 	And the Agent failes to load the file into the Sabre Excel Importer
 	Then the Agent should add the file into an issues dictionary
 

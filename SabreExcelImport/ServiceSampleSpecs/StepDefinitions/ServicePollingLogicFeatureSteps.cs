@@ -24,7 +24,7 @@ namespace ServiceSampleSpecs.StepDefinitions
         MailMessage _message;
         IMailRepository _mailRepository;
         Dictionary<string, SchedulingResponse> _agentProcessingResponse;
-        List<Conference> _meetings;
+        MeetingReport _importer;
                 
         [Given(@"I have a mail repository with a new message in the inbox")]
         public void WhenANewMessageIsAvailableInTheInbox()
@@ -54,65 +54,33 @@ namespace ServiceSampleSpecs.StepDefinitions
             ExcelAdapter ea = new ExcelAdapter();
             ea.Load(_message.Attachments[0].FolderLocation);
             DataSet _dsReport = ea.DataSource;
-            MeetingReport report = new MeetingReport(_dsReport, new SymphonySyncApi(new SymphonyRepository()));
-            _meetings = report.Meetings;
-            report.Dispose();
-            _agent = new SvmAgent(new SymphonyRepository());
+            
+            mocker.GetMock<ISymphonySyncApi>()
+                .Setup(mock => mock.GetConferenceSyncPoint(It.IsAny<string>(), It.IsAny<string>()))
+                .Returns(new ConferenceSyncPoint() { ConfirmationNumber = 1 });
+            mocker.GetMock<ISymphonySyncApi>()
+                .Setup(mock => mock.GetRoomSyncPoint(It.IsAny<string>(), It.IsAny<string>()))
+                .Returns(new SpaceSyncPoint());
+            _importer = new MeetingReport(_dsReport, mocker.Resolve<ISymphonySyncApi>());
         }
 
-        [When(@"the message is from Sabre Virtual Meetings")]
-        public void WhenTheMessageIsFromSabreVirtualMeetings()
+        [When(@"the Symphony platform has no conflicts for the new meetings")]
+        public void WhenTheSymphonyPlatformHasNoConflictsForTheNewMeetings()
         {
-            _agent.EmailDomain = "sabrevm.com";
-            _message = new MailMessage("somewhere@"+_agent.EmailDomain, _message.Body, _message.Attachments);
-        }
-
-        [When(@"the Symphony platform has (.*) with some of the new meetings")]
-        public void WhenTheSymphonyPlatformHasWithSomeOfTheNewMeetings(int conflicts)
-        {
-            Dictionary<string, SchedulingResponse> results = GenerateResults(conflicts);
-            string from = _agent.EmailDomain;
-
-            mocker.GetMock<ISyncAgent>()
-                .Setup(agent => agent.ProcessMeetings(_agent.EmailDomain, _meetings))
-                .Returns(results);
-            _agent = mocker.Resolve<ISyncAgent>();
-            _agent.EmailDomain = from;
-        }
-
-        private Dictionary<string, SchedulingResponse> GenerateResults(int conflicts)
-        {
-            Dictionary<string, SchedulingResponse> results = new Dictionary<string, SchedulingResponse>();
-
-            int meetingConflicts = (conflicts > _meetings.Count) ? _meetings.Count : conflicts;
-            for (int i = 0; i < meetingConflicts; ++i)
-            {
-                SchedulingResponse response = CreateSchedulingResponse(true);
-                results.Add(_meetings[i].ThirdPartyConferenceId, response);
-            }
-
-            for (int i = _meetings.Count - 1; i >= meetingConflicts; i--)
-            {
-                SchedulingResponse response = CreateSchedulingResponse(false);
-                results.Add(_meetings[i].ThirdPartyConferenceId, response);
-            }
-            return results;
-        }
-
-        private SchedulingResponse CreateSchedulingResponse(bool isConflict)
-        {
-            SchedulingResponse response = new SchedulingResponse();
-            response.IsError = !isConflict;
-            response.ErrorType = (isConflict) ? SymphonyErrorType.ScheduleConflict : SymphonyErrorType.None;
-            response.Error = (isConflict) ? "Schedule Conflict" : string.Empty;
-            response.ConfirmationNumber = (isConflict) ? 0 : 1;
-            return response;
+            mocker.GetMock<ISymphonyRepository>()
+                .Setup(mock => mock.SaveConference(It.IsAny<Conference>()))
+                .Returns(new SchedulingResponse() {ConfirmationNumber = 1});
+            mocker.GetMock<ISymphonyRepository>()
+                .Setup(mock => mock.SetConferenceStatus(It.IsAny<long>(), It.IsAny<ScheduleStatus>()))
+                .Returns(true);
+            
+            _agent = new SvmAgent(mocker.Resolve<ISymphonyRepository>());
         }
 
         [When(@"the Agent processes these")]
         public void WhenTheAgentProcessesThese()
         {
-            _agentProcessingResponse = _agent.ProcessMeetings(_agent.EmailDomain, _meetings);
+            _agentProcessingResponse = _agent.ProcessMeetings(string.Empty, _importer.Meetings);
         }
 
         [Then(@"I should be able to view the new message count")]
@@ -130,7 +98,7 @@ namespace ServiceSampleSpecs.StepDefinitions
         [Then(@"the Agent should have a confirmation number for each meeting without a conflict")]
         public void ThenTheAgentShouldHaveAConfirmationNumberForEachMeetingWithoutAConflict()
         {
-            foreach (Conference meeting in _meetings)
+            foreach (Conference meeting in _importer.Meetings)
             {
                 if (_agentProcessingResponse.ContainsKey(meeting.ThirdPartyConferenceId))
                 {
