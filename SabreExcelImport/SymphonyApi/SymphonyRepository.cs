@@ -17,6 +17,7 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
         string _clientKey;
         string _frameworkUrl;
         string _name;
+        Session _session;
 
         public SymphonyRepository()
         {
@@ -42,7 +43,8 @@ namespace AviSpl.Vnoc.Symphony.Services.Api
 
         public Session Login(string username, string password, string domain)
         {
-            return new Session();
+            _session = new Session();
+            return _session;
         }
 
         public SchedulingResponse SaveConference(Conference c)
