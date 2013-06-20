@@ -25,7 +25,7 @@ namespace SabreExcelImport
             }
             this._syncApi = syncApi;
             this._report = report;
-            this._meetings = LoadMeetings();
+            this._meetings = TryLoadMeetings();
             this.EnterpriseSystemName = "SabreVM";
             this.IanaTimezoneName = "Europe/London";
         }
@@ -112,10 +112,23 @@ namespace SabreExcelImport
             return result;
         }
 
-        private List<SvmMeeting> LoadMeetings()
+        private List<SvmMeeting> TryLoadMeetings()
+        {
+            List<SvmMeeting> meetings;
+            if (_report.Tables.Contains("Meeting Report"))
+            {
+                meetings = LoadMeetings(_report.Tables["Meeting Report"]);
+            }
+            else
+            {
+                throw new Exception("Meeting Report table not present in data set");
+            }
+            return meetings;
+        }
+
+        private List<SvmMeeting> LoadMeetings(DataTable meetingReport)
         {
             List<SvmMeeting> meetings = new List<SvmMeeting>();
-            DataTable meetingReport = _report.Tables["Meeting Report"];
             foreach (DataRow row in meetingReport.Rows)
             {
                 SvmMeeting meeting = ReadMeetingRow(row);

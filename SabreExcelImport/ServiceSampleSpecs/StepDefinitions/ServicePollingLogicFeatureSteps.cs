@@ -21,10 +21,10 @@ namespace ServiceSampleSpecs.StepDefinitions
         private AutoMoqer mocker = new AutoMoqer();
 
         ISyncAgent _agent;
-        MailMessage _message;
         IMailRepository _mailRepository;
+        DataSet _dsReport;
         Dictionary<string, SchedulingResponse> _agentProcessingResponse;
-        MeetingReport _importer;
+        IMeetingReport _importer;
                 
         [Given(@"I have a mail repository with a new message in the inbox")]
         public void WhenANewMessageIsAvailableInTheInbox()
@@ -37,24 +37,19 @@ namespace ServiceSampleSpecs.StepDefinitions
 
             _mailRepository = mocker.Resolve<IMailRepository>();
             var newMessages = _mailRepository.GetUnreadMails("INBOX");
-            _message = newMessages[0];
         }
         
         [When(@"the message has an xls attachment")]
         public void WhenTheMessageHasAnXlsAttachment()
         {
-            List<MailRepository.Attachment> attachments = new List<MailRepository.Attachment>();
-            attachments.Add(new MailRepository.Attachment(@"Z:\Downloads\SPL\SabreExcelImport\ServiceSample\Samples\out.xls"));
-            _message = new MailMessage(_message.From, _message.Body, attachments);
+            ExcelAdapter ea = new ExcelAdapter();
+            ea.Load(@"Z:\Downloads\SPL\SabreExcelImport\ServiceSample\Samples\out.xls");
+            _dsReport = ea.DataSource;
         }
 
         [When(@"the attachment is loaded into the Sabre Excel Importer")]
         public void WhenTheAttachmentIsLoadedIntoTheSabreExcelImporter()
         {
-            ExcelAdapter ea = new ExcelAdapter();
-            ea.Load(_message.Attachments[0].FolderLocation);
-            DataSet _dsReport = ea.DataSource;
-            
             mocker.GetMock<ISymphonySyncApi>()
                 .Setup(mock => mock.GetConferenceSyncPoint(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(new ConferenceSyncPoint() { ConfirmationNumber = 1 });
@@ -62,6 +57,16 @@ namespace ServiceSampleSpecs.StepDefinitions
                 .Setup(mock => mock.GetRoomSyncPoint(It.IsAny<string>(), It.IsAny<string>()))
                 .Returns(new SpaceSyncPoint());
             _importer = new MeetingReport(_dsReport, mocker.Resolve<ISymphonySyncApi>());
+        }
+
+        [When(@"the attachment fails to load into the Sabre Excel Importer")]
+        public void WhenTheAttachmentFailsToLoadIntoTheSabreExcelImporter()
+        {
+            mocker.GetMock<IMeetingReport>()
+                .Setup(mock => mock.Meetings)
+                .Throws(new Exception("Meeting Report table not present in data set"));
+
+            _importer = mocker.Resolve<IMeetingReport>();
         }
 
         [When(@"the Symphony platform has no conflicts for the new meetings")]
@@ -107,6 +112,22 @@ namespace ServiceSampleSpecs.StepDefinitions
                     Assert.AreEqual(response.IsError, shouldBeConflict);
                 }
             }
+        }
+
+        [Then(@"the Sabre Excel Importer should throw an exception")]
+        public void ThenTheSabreExcelImporterShouldThrowAnException()
+        {
+            string expectedMessage = string.Empty;
+
+            try
+            {
+                var m = _importer.Meetings;
+            }
+            catch (Exception e)
+            {
+                expectedMessage = e.Message;
+            }
+            Assert.AreEqual(expectedMessage, "Meeting Report table not present in data set");
         }
     }
 }

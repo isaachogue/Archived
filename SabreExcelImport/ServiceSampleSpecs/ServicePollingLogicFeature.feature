@@ -30,9 +30,8 @@ Scenario: Service loads an excel attachment into the Sabre Excel Importer and se
 Scenario: Service loads an excel attachment into the Sabre Excel Importer and failes process the file
 	Given I have a mail repository with a new message in the inbox
 	When the message has an xls attachment 
-	And the attachment is loaded into the Sabre Excel Importer
-	And the Agent failes to load the file into the Sabre Excel Importer
-	Then the Agent should add the file into an issues dictionary
+	And the attachment fails to load into the Sabre Excel Importer
+	Then the Sabre Excel Importer should throw an exception
 
 
 
