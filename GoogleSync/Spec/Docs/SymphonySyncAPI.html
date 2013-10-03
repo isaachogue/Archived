@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Create a library that will provide sync services when integrating with the Symphony API</title>
+    <link rel="stylesheet" href="master.css" type="text/css" />
+    <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  initializeToc();
+});
+</script>
+    <!-- We are using Font Awesome - http://fortawesome.github.com/Font-Awesome - licensed under CC BY 3.0 -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="top" />
+      <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
+        <ul class="features">
+          <li class="file" id="root">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="file">
+            <a href="SabreExcelImport.html">SabreExcelImport</a>
+          </li>
+          <li class="file">
+            <span class="current">Create a library that will provide sync services when integrating with the Symphony API</span>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="obj/index.html">obj</a>
+            </div>
+            <ul class="features">
+              <li>
+                <div class="directory">
+                  <a href="obj/Debug/index.html">Debug</a>
+                </div>
+                <ul class="features">
+                  <li class="file">
+                    <a href="obj/Debug/Spec.csproj.FileListAbsolute.html">Speccsproj File List Absolute</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="feature">
+        <h1>Create a library that will provide sync services when integrating with the Symphony API</h1>
+        <div class="description">
+          <p>As an external enterprise system
+I need a library-based API for interact with Symphony's web services
+So that I can sync conference and space data</p>
+        </div>
+        <ul id="scenarios">
+          <li class="scenario">
+            <div class="scenario-heading">
+              <h2>Get a list space sync point types from the Symphony Repository service</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>I have a set of &lt;Room Count&gt; rooms that are synchronized</li>
+                <li class="step">
+                  <span class="keyword">And </span>I am a sync agent for &lt;External System&gt;</li>
+                <li class="step">
+                  <span class="keyword">When </span>I request the sync point from the Symphony Repository Service with &lt;Id&gt;</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the response should provide the third party sync point for the Id</li>
+              </ul>
+            </div>
+            <div>
+              <div class="examples">
+                <h3>Examples: </h3>
+                <div class="table_container">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>External System</th>
+                        <th>Room Count</th>
+                        <th>Id</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SabreVM</td>
+                        <td>4</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>MSExchange</td>
+                        <td>3</td>
+                        <td>3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>Pickled on: 20 June 2013 12:12:34</p>
+        <p>Produced by Pickles, version 0.8.1.0</p>
+      </div>
+    </div>
+  </body>
+</html>
