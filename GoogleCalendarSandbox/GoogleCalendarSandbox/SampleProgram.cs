@@ -50,6 +50,41 @@ namespace consoleGoogleResearch
             Console.ReadKey();
         }
 
+        private static void WatchCalendar(CalendarService service, string id)
+        {
+            Channel c = new Channel();
+            c.Address = "www.activehogue.com/notifications";
+            c.Id = Guid.NewGuid().ToString();
+            c.Type = "web_hook";
+            c.Token = Guid.NewGuid().ToString(); // space Id could go here
+            c.ResourceUri = @"https://www.googleapis.com/calendar/v3/calendars/" + id + "/events";
+            service.Events.Watch(c, id);
+        }
+
+        private static Event LoadCalendarEvent(CalendarService service, string calendarId, string id)
+        {
+            Google.Apis.Calendar.v3.EventsResource.GetRequest request = service.Events.Get(calendarId, id);
+            return request.Execute();
+        }
+
+        private static void ReceiveNotification()
+        {
+            //POST https://mydomain.com/notifications // Your receiving URL.
+            //Content-Type: application/json; utf-8
+            //Content-Length: 0
+            //X-Goog-Channel-ID: 4ba78bf0-6a47-11e2-bcfd-0800200c9a66
+            //X-Goog-Channel-Token: 398348u3tu83ut8uu38
+            //X-Goog-Channel-Expiration: 1367869013915
+            //X-Goog-Resource-ID:  ret08u3rv24htgh289g
+            //X-Goog-Resource-URI: https://www.googleapis.com/calendar/v3/calendars/my_calendar@gmail.com/events
+            //X-Goog-Resource-State:  exists
+            //X-Goog-Message-Number: 10
+
+            // Resolve the token to a spaceId
+            // Call 
+            // LoadCalendarEvent(service, my_calendar@gmail.com, 
+        }
+
         private static IAuthorizationState GetAuthentication(NativeApplicationClient arg)
         {
             // Get the auth URL:
