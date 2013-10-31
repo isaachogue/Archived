@@ -22,3 +22,4 @@ Z:\Downloads\SPL\GoogleSync\Spec\bin\Debug\Microsoft.Practices.Unity.Interceptio
 Z:\Downloads\SPL\GoogleSync\Spec\bin\Debug\Moq.pdb
 Z:\Downloads\SPL\GoogleSync\Spec\bin\Debug\Moq.xml
 Z:\Downloads\SPL\GoogleSync\Spec\bin\Debug\nunit.framework.xml
+Z:\Downloads\SPL\GoogleSync\Spec\obj\Debug\GoogleSyncSpec.csprojResolveAssemblyReference.cache

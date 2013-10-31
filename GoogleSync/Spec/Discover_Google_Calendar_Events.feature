@@ -10,5 +10,35 @@ Scenario: Inform google calendar to notifiy Symphony of events for a managed spa
 	And the watch request includes an id property
 	And the watch request includes a type property
 	And the watch request includes a URI where requests should be provided
+	And the URI domain has been registered in the Google API console 
 	And the watch request includes a token property with the space GUID
 	Then the result should be an HTTP 200 OK status code
+
+Scenario: Google calendar informs Symphony of new watch request for a space
+	Given a google calendar has successfully registered a watch request for a Symphony Space
+	And a valid Symphony URI was provided as part of the watch requests
+	Then the Symphony URI should recieve a google sync message
+	And the message should have a google channel id value
+	And the message should have a resource id value
+	And the message should have a token property with the space GUID
+	And the message should have a resource state of 'sync'
+	
+Scenario: Google calendar informs Symphony of new event for a space
+	Given a google calendar has successfully registered a watch request for a Symphony Space
+	And a valid Symphony URI was provided as part of the watch requests
+	Then the Symphony URI should recieve a google sync message
+	And the message should have a google channel id value
+	And the message should have a resource id value
+	And the message should have a token property with the space GUID
+	And the message should have a resource state of 'exists'
+	And the message should have a resource URI where events are located
+	And the message should have a message number greater than 1
+	And the result should be an HTTP 200 OK status code
+	
+Scenario: Symphony requests the latest events for a space
+	Given Symphony needs to poll a Google Calendar for changes
+	And Symphony has a timestamp for the last synchronization time
+	When Symphony makes a request and includes the last synchronization time
+	Then the response should include only events that are new or modified since the last synchronization
+
+ 

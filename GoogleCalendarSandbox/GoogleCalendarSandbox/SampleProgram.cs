@@ -44,7 +44,7 @@ namespace consoleGoogleResearch
                 var events = elr.Execute();
                 foreach (Event e in events.Items)
                 {
-                    Console.WriteLine("\t From: {0} To: {1} Description: {2}, Location: {3}", e.Start.DateTime, e.End.DateTime, e.Summary, e.Location);
+                    Console.WriteLine("\t From: {0} To: {1} Description: {2}, Location: {3}, Id: {4}", e.Start.DateTime, e.End.DateTime, e.Summary, e.Location, e.Id);
                 }
             }
             Console.ReadKey();

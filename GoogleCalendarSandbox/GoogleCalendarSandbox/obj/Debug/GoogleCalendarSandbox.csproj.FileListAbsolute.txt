@@ -55,3 +55,12 @@ Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Ne
 Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Zlib.Portable.pdb
 Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.csproj.App.config
 Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.xml
