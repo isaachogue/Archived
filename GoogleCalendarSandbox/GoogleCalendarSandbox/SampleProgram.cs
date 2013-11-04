@@ -53,7 +53,7 @@ namespace consoleGoogleResearch
         private static void WatchCalendar(CalendarService service, string id)
         {
             Channel c = new Channel();
-            c.Address = "www.activehogue.com/notifications";
+            c.Address = "www.vnocsymphony.com/google/notifications";
             c.Id = Guid.NewGuid().ToString();
             c.Type = "web_hook";
             c.Token = Guid.NewGuid().ToString(); // space Id could go here
@@ -61,9 +61,10 @@ namespace consoleGoogleResearch
             service.Events.Watch(c, id);
         }
 
-        private static Event LoadCalendarEvent(CalendarService service, string calendarId, string id)
+        private static Events LoadCalendarEvent(CalendarService service, string calendarId, DateTime timeStamp )
         {
-            Google.Apis.Calendar.v3.EventsResource.GetRequest request = service.Events.Get(calendarId, id);
+            service.Events.List(calendarId).UpdatedMin = timeStamp.ToShortTimeString();
+            Google.Apis.Calendar.v3.EventsResource.ListRequest request = service.Events.List(calendarId);
             return request.Execute();
         }
 
@@ -81,8 +82,7 @@ namespace consoleGoogleResearch
             //X-Goog-Message-Number: 10
 
             // Resolve the token to a spaceId
-            // Call 
-            // LoadCalendarEvent(service, my_calendar@gmail.com, 
+            // Invoke LoadCalendarEvent(service, my_calendar@gmail.com, timestamp)
         }
 
         private static IAuthorizationState GetAuthentication(NativeApplicationClient arg)
