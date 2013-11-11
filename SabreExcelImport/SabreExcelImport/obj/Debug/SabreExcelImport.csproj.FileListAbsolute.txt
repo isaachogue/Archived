@@ -15,8 +15,6 @@ Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\SabreExcelImport.pd
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\nunit.framework.dll
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\SymphonyIm.2.4.dll
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\SymphonySyncApi.dll
-Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\SymphonySyncApi.pdb
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\bin\Debug\nunit.framework.xml
-Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\obj\Debug\SabreExcelImport.csprojResolveAssemblyReference.cache
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\obj\Debug\SabreExcelImport.dll
 Z:\Downloads\SPL\SabreExcelImport\SabreExcelImport\obj\Debug\SabreExcelImport.pdb

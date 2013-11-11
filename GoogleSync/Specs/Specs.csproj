@@ -42,7 +42,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TechTalk.SpecFlow">
-      <HintPath>..\GoogleSynch\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -63,9 +63,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GoogleSynch\GoogleSynch.csproj">
-      <Project>{070d9cd7-fd9e-4d0d-9302-a74a40f4be22}</Project>
-      <Name>GoogleSynch</Name>
+    <ProjectReference Include="..\GoogleSyncAgent\GoogleSyncAgent.csproj">
+      <Project>{5d22ee37-d9ba-408a-8765-ea9cf7dae954}</Project>
+      <Name>GoogleSyncAgent</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

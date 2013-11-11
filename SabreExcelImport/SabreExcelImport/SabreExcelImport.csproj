@@ -55,6 +55,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\SymphonyIm.2.4.dll</HintPath>
     </Reference>
+    <Reference Include="SymphonySyncApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SymphonySyncApi.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -79,12 +83,6 @@
     <Content Include="lib\settings.dll" />
     <Content Include="lib\SymphonyIm.2.4.dll" />
     <Content Include="lib\SymphonySyncApi.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SymphonyApi\SymphonyApi.csproj">
-      <Project>{ca1bd301-a78e-4b66-bb0b-dc211dc096b7}</Project>
-      <Name>SymphonyApi</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

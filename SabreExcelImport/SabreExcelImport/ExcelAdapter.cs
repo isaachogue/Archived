@@ -92,9 +92,9 @@ namespace Office.Framework.Excel
                 }
                 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
             finally
             {

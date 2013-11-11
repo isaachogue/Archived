@@ -1,0 +1,6 @@
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\bin\Debug\GoogleSyncAgent.dll
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\bin\Debug\GoogleSyncAgent.pdb
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\bin\Debug\SymphonyIm.2.4.dll
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\bin\Debug\SyncAgent.dll
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\obj\Debug\GoogleSyncAgent.dll
+Z:\Downloads\SPL\GoogleSync\GoogleSyncAgent\obj\Debug\GoogleSyncAgent.pdb

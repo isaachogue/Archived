@@ -45,7 +45,6 @@ Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\SymphonyIm.2.4.dll
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\SymphonySyncApi.dll
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\TechTalk.SpecFlow.dll
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\SabreExcelImport.pdb
-Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\SymphonySyncApi.pdb
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Microsoft.Practices.Unity.xml
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 Z:\Downloads\SPL\SabreExcelImport\Spec\bin\Debug\Microsoft.Practices.Unity.Interception.xml

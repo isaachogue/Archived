@@ -37,6 +37,9 @@
     <Reference Include="SymphonyIm.2.4">
       <HintPath>..\lib\SymphonyIm.2.4.dll</HintPath>
     </Reference>
+    <Reference Include="SymphonySyncApi">
+      <HintPath>..\lib\SymphonySyncApi.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,10 +59,6 @@
     <ProjectReference Include="..\SabreExcelImport\SabreExcelImport.csproj">
       <Project>{45bda9b5-ddc7-43be-bcd2-6de11ef838e8}</Project>
       <Name>SabreExcelImport</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SymphonyApi\SymphonyApi.csproj">
-      <Project>{ca1bd301-a78e-4b66-bb0b-dc211dc096b7}</Project>
-      <Name>SymphonyApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

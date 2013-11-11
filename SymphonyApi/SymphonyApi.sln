@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyApi", "Api\SymphonyApi.csproj", "{CA1BD301-A78E-4B66-BB0B-DC211DC096B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymphonyApiTests", "Tests\SymphonyApiTests.csproj", "{981BB27D-717B-42C7-B480-1A0079DCE69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1BD301-A78E-4B66-BB0B-DC211DC096B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1BD301-A78E-4B66-BB0B-DC211DC096B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1BD301-A78E-4B66-BB0B-DC211DC096B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1BD301-A78E-4B66-BB0B-DC211DC096B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981BB27D-717B-42C7-B480-1A0079DCE69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981BB27D-717B-42C7-B480-1A0079DCE69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981BB27D-717B-42C7-B480-1A0079DCE69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981BB27D-717B-42C7-B480-1A0079DCE69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
