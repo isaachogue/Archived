@@ -36,18 +36,28 @@ namespace consoleGoogleResearch
             var result = clrq.Execute();
 
             Console.WriteLine("Calendars: ");
-            foreach (CalendarListEntry calendar in result.Items)
+            DateTime lastPoll = DateTime.MinValue;
+
+            var continue_poll = "";
+            do
             {
-                Console.WriteLine("{0}", calendar.Id);
-                Console.WriteLine("\tAppointments:");
-                Google.Apis.Calendar.v3.EventsResource.ListRequest elr = service.Events.List(calendar.Id);
-                var events = elr.Execute();
-                foreach (Event e in events.Items)
+                foreach (CalendarListEntry calendar in result.Items)
                 {
-                    Console.WriteLine("\t From: {0} To: {1} Description: {2}, Location: {3}, Id: {4}", e.Start.DateTime, e.End.DateTime, e.Summary, e.Location, e.Id);
+                    Console.WriteLine("{0}", calendar.Id);
+                    Console.WriteLine("\tAppointments:");
+                    //Google.Apis.Calendar.v3.EventsResource.ListRequest elr = service.Events.List(calendar.Id);
+                    //var events = elr.Execute();
+                    var events = LoadCalendarEvent(service, calendar.Id, lastPoll);
+                    lastPoll = DateTime.Now;
+
+                    foreach (Event e in events.Items)
+                    {
+                        Console.WriteLine("\t From: {0} To: {1} Description: {2}, Location: {3}, Id: {4}", e.Start.DateTime, e.End.DateTime, e.Summary, e.Location, e.Id);
+                    }
                 }
-            }
-            Console.ReadKey();
+                Console.WriteLine("To continue press any key other than Q");
+                continue_poll = Console.ReadKey().KeyChar.ToString();
+            } while (continue_poll != "q"); 
         }
 
         private static void WatchCalendar(CalendarService service, string id)
@@ -61,10 +71,10 @@ namespace consoleGoogleResearch
             service.Events.Watch(c, id);
         }
 
-        private static Events LoadCalendarEvent(CalendarService service, string calendarId, DateTime timeStamp )
+        private static Events LoadCalendarEvent(CalendarService service, string calendarId, DateTime timeStampLastPoll )
         {
-            service.Events.List(calendarId).UpdatedMin = timeStamp.ToShortTimeString();
-            Google.Apis.Calendar.v3.EventsResource.ListRequest request = service.Events.List(calendarId);
+            var request = service.Events.List(calendarId);
+//            listRequest.UpdatedMin = timeStampLastPoll.ToString("u");
             return request.Execute();
         }
 

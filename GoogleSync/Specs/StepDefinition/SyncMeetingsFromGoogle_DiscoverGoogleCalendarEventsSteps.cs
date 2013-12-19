@@ -16,6 +16,7 @@ namespace Specs.StepDefinition
         [Given(@"it has the ability to sync one or more of symphony resource schedules between symphony and a google calendar")]
         public void GivenItHasTheAbilityToSyncOneOrMoreOfSymphonyResourceSchedulesBetweenSymphonyAndAGoogleCalendar()
         {
+
             ScenarioContext.Current.Pending();
         }
     }
