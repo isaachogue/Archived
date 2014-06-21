@@ -1,5 +1,0 @@
-Z:\Downloads\SPL\SymphonyApi\Api\bin\Release\SymphonySyncApi.dll
-Z:\Downloads\SPL\SymphonyApi\Api\bin\Release\SymphonySyncApi.pdb
-Z:\Downloads\SPL\SymphonyApi\Api\bin\Release\SymphonyIm.2.4.dll
-Z:\Downloads\SPL\SymphonyApi\Api\obj\Release\SymphonySyncApi.dll
-Z:\Downloads\SPL\SymphonyApi\Api\obj\Release\SymphonySyncApi.pdb

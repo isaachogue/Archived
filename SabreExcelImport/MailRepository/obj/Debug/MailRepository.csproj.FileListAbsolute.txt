@@ -1,6 +1,0 @@
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\bin\Debug\MailRepository.dll
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\bin\Debug\MailRepository.pdb
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\bin\Debug\ActiveUp.Net.Common.dll
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\bin\Debug\ActiveUp.Net.Imap4.dll
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\obj\Debug\MailRepository.dll
-Z:\Downloads\SPL\SabreExcelImport\MailRepository\obj\Debug\MailRepository.pdb

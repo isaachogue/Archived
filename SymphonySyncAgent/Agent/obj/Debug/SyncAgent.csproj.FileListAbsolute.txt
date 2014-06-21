@@ -1,7 +1,0 @@
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.dll.config
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.pdb
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SymphonyIm.2.4.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncAgent.csprojResolveAssemblyReference.cache
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncAgent.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncAgent.pdb

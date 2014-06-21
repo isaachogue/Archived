@@ -1,6 +1,0 @@
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Release\SyncAgent.dll.config
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Release\SyncAgent.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Release\SyncAgent.pdb
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Release\SymphonyIm.2.4.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Release\SyncAgent.dll
-Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Release\SyncAgent.pdb
