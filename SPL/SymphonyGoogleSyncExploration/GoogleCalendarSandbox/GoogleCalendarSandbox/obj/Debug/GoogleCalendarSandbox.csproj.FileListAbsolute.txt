@@ -1,0 +1,66 @@
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.exe.config
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.csproj.App.config
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.exe
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.pdb
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\DotNetOpenAuth.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Newtonsoft.Json.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Extensions.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Primitives.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Zlib.Portable.dll
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.pdb
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.pdb
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.pdb
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Newtonsoft.Json.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Extensions.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Primitives.xml
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Zlib.Portable.pdb
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.exe
+c:\users\isaac hogue\documents\visual studio 2012\Projects\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.exe.config
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.exe
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.exe
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\GoogleCalendarSandbox.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\DotNetOpenAuth.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Newtonsoft.Json.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Extensions.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Primitives.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Zlib.Portable.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Authentication.OAuth2.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Calendar.v3.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Newtonsoft.Json.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Extensions.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\System.Net.Http.Primitives.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Zlib.Portable.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.csproj.App.config
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\obj\Debug\GoogleCalendarSandbox.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.dll
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.Auth.PlatformServices.xml
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.pdb
+Z:\Downloads\SPL\GoogleCalendarSandbox\GoogleCalendarSandbox\bin\Debug\Google.Apis.PlatformServices.xml

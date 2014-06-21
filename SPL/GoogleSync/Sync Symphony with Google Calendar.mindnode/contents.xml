@@ -1,0 +1,1816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string></string>
+	<key>comments</key>
+	<string></string>
+	<key>isUsingConstrainedLayout</key>
+	<true/>
+	<key>keywords</key>
+	<string></string>
+	<key>mindMap</key>
+	<dict>
+		<key>associations</key>
+		<array/>
+		<key>color</key>
+		<string>{1.000, 1.000, 1.000, 1.000}</string>
+		<key>mainNodes</key>
+		<array>
+			<dict>
+				<key>contentAlignment</key>
+				<integer>1</integer>
+				<key>fillColor</key>
+				<string>{1.000, 1.000, 1.000, 1.000}</string>
+				<key>isDecreasingBranchThickness</key>
+				<true/>
+				<key>isDrawingFill</key>
+				<true/>
+				<key>isLeftAligned</key>
+				<false/>
+				<key>location</key>
+				<string>{-450.85546875, 48.9765625}</string>
+				<key>nodeID</key>
+				<string>88956D8D-1E25-4BBA-ABC1-BFEAA62EE455</string>
+				<key>strokeColor</key>
+				<string>{0.500, 0.500, 0.500, 1.000}</string>
+				<key>strokeStyle</key>
+				<integer>0</integer>
+				<key>strokeWidth</key>
+				<real>2</real>
+				<key>subnodes</key>
+				<array>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{-118.85546875, -54.0234375}</string>
+						<key>nodeID</key>
+						<string>30B3D848-26BF-493E-9322-7D1C4975C996</string>
+						<key>strokeColor</key>
+						<string>{0.467, 0.000, 0.851, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{47.14453125, -198.0234375}</string>
+								<key>nodeID</key>
+								<string>EA0181C5-569E-47A0-A835-EB1F5B68793A</string>
+								<key>strokeColor</key>
+								<string>{0.467, 0.000, 0.851, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{291.14453125, -454.0234375}</string>
+										<key>nodeID</key>
+										<string>2EC74BAA-AD2B-41DC-AF4B-977A5EBF2FB0</string>
+										<key>strokeColor</key>
+										<string>{0.467, 0.000, 0.851, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{521.14453125, -548.0234375}</string>
+												<key>nodeID</key>
+												<string>32494FE0-9B4B-4328-9B98-93AC1BE1300B</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(25, 25, 25, 1.000000); font: 14px "Helvetica Neue"; text-align: left; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Install-Package Google.Apis.Authentication -Pre&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue25;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Install-Package Google.Apis.Authentication -Pre}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{521.14453125, -500.0234375}</string>
+												<key>nodeID</key>
+												<string>B044C955-E147-449E-859C-E2E94C28DE82</string>
+												<key>strokeColor</key>
+												<string>{0.098, 0.098, 0.098, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>213</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(25, 25, 25, 1.000000); font: 12px "Andale Mono"; text-align: left; -cocoa-font-postscriptname: "AndaleMono"; '&gt;Install-Package Google.Apis.Calendar.v3 -Pre&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>0</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue25;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf2 Install-Package Google.Apis.Calendar.v3 -Pre}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{521.14453125, -408.0234375}</string>
+												<key>nodeID</key>
+												<string>5909CB43-FB21-4F57-9BC1-A8C664208913</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{669.14453125, -456.0234375}</string>
+														<key>nodeID</key>
+														<string>387BD974-C078-4405-8159-C766EF7A23F5</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2'&gt;http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2&lt;/a&gt;&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2"}}{\fldrslt 
+\f0\fs28 \cf2 http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2}}}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{669.14453125, -392.0234375}</string>
+														<key>nodeID</key>
+														<string>A19D594C-7975-4B05-B876-368A05D950CC</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2'&gt;http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2&lt;/a&gt;&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2"}}{\fldrslt 
+\f0\fs28 \cf2 http://stackoverflow.com/questions/17343891/authenticating-to-google-api-with-oauth2}}}</string>
+														</dict>
+													</dict>
+												</array>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;service auth&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 service auth}</string>
+												</dict>
+											</dict>
+										</array>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;leverage c#.net api (beta)&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 leverage c#.net api (beta)}</string>
+										</dict>
+									</dict>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{291.14453125, -96.0234375}</string>
+										<key>nodeID</key>
+										<string>86CD543B-5456-4795-8D78-EFA792BC0924</string>
+										<key>strokeColor</key>
+										<string>{0.467, 0.000, 0.851, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, -328.0234375}</string>
+												<key>nodeID</key>
+												<string>B78958FC-FE8E-4512-91E6-D4B7BDF76AAB</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Listen for revisions&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Listen for revisions}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, -296.0234375}</string>
+												<key>nodeID</key>
+												<string>505B31A8-EEA4-49B4-9EA0-EC8F75F8FE20</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{968.14453125, -296.0234375}</string>
+														<key>nodeID</key>
+														<string>145DE075-3DCA-4000-84C2-391DFA27CDA3</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(13, 96, 3, 1.000000); font: 13px "Courier"; text-align: left; -cocoa-font-postscriptname: "Courier"; '&gt;X-Goog-Message-Number&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red13\green96\blue3;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 X-Goog-Message-Number}</string>
+														</dict>
+													</dict>
+												</array>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Event notification messages are numbered so sequence can be determined&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Event notification messages are numbered so sequence can be determined}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, -248.0234375}</string>
+												<key>nodeID</key>
+												<string>672FB200-D03A-4D1D-8745-6EBE7BD37094</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; text-align: left; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Notification Event should result in the sync agent polling the resource for events since last sync&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Notification Event should result in the sync agent polling the resource for events since last sync}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, -184.0234375}</string>
+												<key>nodeID</key>
+												<string>785D0FF8-E68E-4992-A578-65D5D633EF84</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Could receive multiple notifications for a single event when multiple calendars are included in a reservation&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Could receive multiple notifications for a single event when multiple calendars are included in a reservation}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, -120.0234375}</string>
+												<key>nodeID</key>
+												<string>4BB7B5C1-B66E-4BB1-89C5-EA7AEBEA8F60</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Symphony will in return poll the calendar resource for events that have occurred after the last polling timestamp&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Symphony will in return poll the calendar resource for events that have occurred after the last polling timestamp}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{606.14453125, 47.9765625}</string>
+												<key>nodeID</key>
+												<string>6632B039-F881-4D97-B65F-80DC60E35BE9</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{796.14453125, -56.0234375}</string>
+														<key>nodeID</key>
+														<string>2AE9C9D4-D551-4CBE-816D-AFF2357B4194</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; text-align: left; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='http://googledevelopers.blogspot.com/2013/07/google-calendar-api-push-notifications.html'&gt;http://googledevelopers.blogspot.com/2013/07/google-calendar-api-push-notifications.html&lt;/a&gt;&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://googledevelopers.blogspot.com/2013/07/google-calendar-api-push-notifications.html"}}{\fldrslt 
+\f0\fs28 \cf2 http://googledevelopers.blogspot.com/2013/07/google-calendar-api-push-notifications.html}}}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{796.14453125, 7.9765625}</string>
+														<key>nodeID</key>
+														<string>36792253-6424-4068-ABB1-A712CAB4BBEC</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='https://developers.google.com/google-apps/calendar/v3/push'&gt;https://developers.google.com/google-apps/calendar/v3/push&lt;/a&gt;&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "https://developers.google.com/google-apps/calendar/v3/push"}}{\fldrslt 
+\f0\fs28 \cf2 https://developers.google.com/google-apps/calendar/v3/push}}}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{796.14453125, 55.9765625}</string>
+														<key>nodeID</key>
+														<string>F15EE3E1-6862-408D-AEB4-410690278A61</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array>
+															<dict>
+																<key>contentAlignment</key>
+																<integer>1</integer>
+																<key>fillColor</key>
+																<string>{1.000, 1.000, 1.000, 1.000}</string>
+																<key>isDecreasingBranchThickness</key>
+																<true/>
+																<key>isDrawingFill</key>
+																<false/>
+																<key>isLeftAligned</key>
+																<false/>
+																<key>location</key>
+																<string>{977.14453125, 55.9765625}</string>
+																<key>nodeID</key>
+																<string>15A6F166-F56E-43CD-BBDC-17819B124C8F</string>
+																<key>strokeColor</key>
+																<string>{0.467, 0.000, 0.851, 1.000}</string>
+																<key>strokeStyle</key>
+																<integer>0</integer>
+																<key>strokeWidth</key>
+																<real>1</real>
+																<key>subnodes</key>
+																<array/>
+																<key>title</key>
+																<dict>
+																	<key>constrainedWidth</key>
+																	<integer>300</integer>
+																	<key>htmlText</key>
+																	<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='https://developers.google.com/google-apps/calendar/firstapp'&gt;https://developers.google.com/google-apps/calendar/firstapp&lt;/a&gt;&lt;/p&gt;</string>
+																	<key>shrinkToFitContent</key>
+																	<integer>1</integer>
+																	<key>text</key>
+																	<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "https://developers.google.com/google-apps/calendar/firstapp"}}{\fldrslt 
+\f0\fs28 \cf2 https://developers.google.com/google-apps/calendar/firstapp}}}</string>
+																</dict>
+															</dict>
+														</array>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>119</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Read Google Calendar API Info&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>0</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Read Google Calendar API Info}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{796.14453125, 119.9765625}</string>
+														<key>nodeID</key>
+														<string>DC400AE7-4FE0-42B6-8008-99E4823A4CD7</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;&lt;a href='https://cloud.google.com/console#/project/apps~chrome-backbone-359/apiui/api/calendar/method/calendar.events.watch'&gt;https://cloud.google.com/console#/project/apps~chrome-backbone-359/apiui/api/calendar/method/calendar.events.watch&lt;/a&gt;&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "https://cloud.google.com/console#/project/apps~chrome-backbone-359/apiui/api/calendar/method/calendar.events.watch"}}{\fldrslt 
+\f0\fs28 \cf2 https://cloud.google.com/console#/project/apps~chrome-backbone-359/apiui/api/calendar/method/calendar.events.watch}}}</string>
+														</dict>
+													</dict>
+												</array>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Google API Details&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Google API Details}</string>
+												</dict>
+											</dict>
+										</array>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p&gt;&lt;span style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Register for and Receive Google Push Notifications (n&lt;/span&gt;&lt;span style='font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;ot poll-based)&lt;/span&gt;&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Register for and Receive Google Push Notifications (n\cf0 ot poll-based)}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Discover calendar revisions&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Discover calendar revisions}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{47.14453125, 279.9765625}</string>
+								<key>nodeID</key>
+								<string>4898C448-2229-4AF7-8B28-1E5407DD9DBF</string>
+								<key>strokeColor</key>
+								<string>{0.467, 0.000, 0.851, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{276.14453125, 255.9765625}</string>
+										<key>nodeID</key>
+										<string>BDDF23F9-6827-4B0C-8859-7015C2A4A484</string>
+										<key>strokeColor</key>
+										<string>{0.467, 0.000, 0.851, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 183.9765625}</string>
+												<key>nodeID</key>
+												<string>7D53E915-E6A4-4D1A-AB3F-9631FDFC840A</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Third Party Id (Google unique id)&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Third Party Id (Google unique id)}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 215.9765625}</string>
+												<key>nodeID</key>
+												<string>F0F04FDD-6558-44B4-A2AC-2D0718649C6D</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Title&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Title}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 263.9765625}</string>
+												<key>nodeID</key>
+												<string>69880D44-7921-4365-BEC0-5C5BB1DE8E45</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{603.14453125, 247.9765625}</string>
+														<key>nodeID</key>
+														<string>2DD0201C-7538-4276-BC45-9963B282A3ED</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;other rooms&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 other rooms}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{603.14453125, 279.9765625}</string>
+														<key>nodeID</key>
+														<string>440FD0B0-D2FF-48A9-8290-1FB40788DF9D</string>
+														<key>strokeColor</key>
+														<string>{0.467, 0.000, 0.851, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;people&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 people}</string>
+														</dict>
+													</dict>
+												</array>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Participants&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Participants}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 311.9765625}</string>
+												<key>nodeID</key>
+												<string>B36E10BB-2153-44F0-B3F9-7AA267CBA381</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Notes&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Notes}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 343.9765625}</string>
+												<key>nodeID</key>
+												<string>97E1581C-C5B7-4728-B981-3479A5BED15F</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Recurrence&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Recurrence}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 375.9765625}</string>
+												<key>nodeID</key>
+												<string>E37C5923-40B5-4F6E-A085-E67494201976</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Start Date and Time&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Start Date and Time}</string>
+												</dict>
+											</dict>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{456.14453125, 407.9765625}</string>
+												<key>nodeID</key>
+												<string>81F9D2E7-C106-4C93-98FB-A1531A1F1F4E</string>
+												<key>strokeColor</key>
+												<string>{0.467, 0.000, 0.851, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array/>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;End Date and Time&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 End Date and Time}</string>
+												</dict>
+											</dict>
+										</array>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>118</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; text-align: left; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Ensure that critical fields are converted from google event to Symphony meeting object&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>0</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Ensure that critical fields are converted from google event to Symphony meeting object}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>167</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Create a symphony version of the calendar event&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>0</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Create a symphony version of the calendar event}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{47.14453125, 447.9765625}</string>
+								<key>nodeID</key>
+								<string>4B9A7C4B-B3DC-41F6-911E-5D1C68A61B84</string>
+								<key>strokeColor</key>
+								<string>{0.467, 0.000, 0.851, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{299.14453125, 439.9765625}</string>
+										<key>nodeID</key>
+										<string>13B4067C-D966-45DA-8325-EEBEC123A453</string>
+										<key>strokeColor</key>
+										<string>{0.467, 0.000, 0.851, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array/>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;SaveMeeting/DeleteMeeting/CancelMeeting Runbook Process’&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 SaveMeeting/DeleteMeeting/CancelMeeting Runbook Process\'92}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Save the event to Symphony&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Save the event to Symphony}</string>
+								</dict>
+							</dict>
+						</array>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>104</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Sync Meetings From Google&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>0</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Sync Meetings From Google}</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>contentAlignment</key>
+						<integer>1</integer>
+						<key>fillColor</key>
+						<string>{1.000, 1.000, 1.000, 1.000}</string>
+						<key>isDecreasingBranchThickness</key>
+						<true/>
+						<key>isDrawingFill</key>
+						<false/>
+						<key>isLeftAligned</key>
+						<false/>
+						<key>location</key>
+						<string>{-118.85546875, 559.9765625}</string>
+						<key>nodeID</key>
+						<string>4911AA74-DA61-4C26-877F-BE8087AA3547</string>
+						<key>strokeColor</key>
+						<string>{0.000, 0.608, 0.847, 1.000}</string>
+						<key>strokeStyle</key>
+						<integer>0</integer>
+						<key>strokeWidth</key>
+						<real>6</real>
+						<key>subnodes</key>
+						<array>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{50.14453125, 519.9765625}</string>
+								<key>nodeID</key>
+								<string>A44AF8F3-A799-4EBD-8070-EA52A2F07991</string>
+								<key>strokeColor</key>
+								<string>{0.000, 0.608, 0.847, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array>
+									<dict>
+										<key>contentAlignment</key>
+										<integer>1</integer>
+										<key>fillColor</key>
+										<string>{1.000, 1.000, 1.000, 1.000}</string>
+										<key>isDecreasingBranchThickness</key>
+										<true/>
+										<key>isDrawingFill</key>
+										<false/>
+										<key>isLeftAligned</key>
+										<false/>
+										<key>location</key>
+										<string>{275.14453125, 519.9765625}</string>
+										<key>nodeID</key>
+										<string>C3376AD9-A0B1-41CF-A5D7-A9052F8ADB23</string>
+										<key>strokeColor</key>
+										<string>{0.000, 0.608, 0.847, 1.000}</string>
+										<key>strokeStyle</key>
+										<integer>0</integer>
+										<key>strokeWidth</key>
+										<real>4</real>
+										<key>subnodes</key>
+										<array>
+											<dict>
+												<key>contentAlignment</key>
+												<integer>1</integer>
+												<key>fillColor</key>
+												<string>{1.000, 1.000, 1.000, 1.000}</string>
+												<key>isDecreasingBranchThickness</key>
+												<true/>
+												<key>isDrawingFill</key>
+												<false/>
+												<key>isLeftAligned</key>
+												<false/>
+												<key>location</key>
+												<string>{515.14453125, 519.9765625}</string>
+												<key>nodeID</key>
+												<string>B7095B55-6213-4CBB-932D-4155B0ADEC85</string>
+												<key>strokeColor</key>
+												<string>{0.000, 0.608, 0.847, 1.000}</string>
+												<key>strokeStyle</key>
+												<integer>0</integer>
+												<key>strokeWidth</key>
+												<real>3</real>
+												<key>subnodes</key>
+												<array>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{648.14453125, 487.9765625}</string>
+														<key>nodeID</key>
+														<string>4AFFE3BD-A65F-4400-92FA-52E040D410D0</string>
+														<key>strokeColor</key>
+														<string>{0.000, 0.608, 0.847, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Create Event&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Create Event}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{648.14453125, 519.9765625}</string>
+														<key>nodeID</key>
+														<string>A6D79CDB-AB6E-493B-A559-3B67C99717B2</string>
+														<key>strokeColor</key>
+														<string>{0.000, 0.608, 0.847, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Check Sync Point&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Check Sync Point}</string>
+														</dict>
+													</dict>
+													<dict>
+														<key>contentAlignment</key>
+														<integer>1</integer>
+														<key>fillColor</key>
+														<string>{1.000, 1.000, 1.000, 1.000}</string>
+														<key>isDecreasingBranchThickness</key>
+														<true/>
+														<key>isDrawingFill</key>
+														<false/>
+														<key>isLeftAligned</key>
+														<false/>
+														<key>location</key>
+														<string>{648.14453125, 551.9765625}</string>
+														<key>nodeID</key>
+														<string>99FD536C-A508-4F6D-86C5-B381E3BDF476</string>
+														<key>strokeColor</key>
+														<string>{0.000, 0.608, 0.847, 1.000}</string>
+														<key>strokeStyle</key>
+														<integer>0</integer>
+														<key>strokeWidth</key>
+														<real>2</real>
+														<key>subnodes</key>
+														<array/>
+														<key>title</key>
+														<dict>
+															<key>constrainedWidth</key>
+															<integer>300</integer>
+															<key>htmlText</key>
+															<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Update Event&lt;/p&gt;</string>
+															<key>shrinkToFitContent</key>
+															<integer>1</integer>
+															<key>text</key>
+															<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Update Event}</string>
+														</dict>
+													</dict>
+												</array>
+												<key>title</key>
+												<dict>
+													<key>constrainedWidth</key>
+													<integer>300</integer>
+													<key>htmlText</key>
+													<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Activities:&lt;/p&gt;</string>
+													<key>shrinkToFitContent</key>
+													<integer>1</integer>
+													<key>text</key>
+													<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Activities:}</string>
+												</dict>
+											</dict>
+										</array>
+										<key>title</key>
+										<dict>
+											<key>constrainedWidth</key>
+											<integer>300</integer>
+											<key>htmlText</key>
+											<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Create Google Sync Outlet&lt;/p&gt;</string>
+											<key>shrinkToFitContent</key>
+											<integer>1</integer>
+											<key>text</key>
+											<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Create Google Sync Outlet}</string>
+										</dict>
+									</dict>
+								</array>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;runbook-driven changes&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 runbook-driven changes}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{50.14453125, 583.9765625}</string>
+								<key>nodeID</key>
+								<string>40DA2A53-25E6-4F24-826E-78282C2CCF0E</string>
+								<key>strokeColor</key>
+								<string>{0.000, 0.608, 0.847, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; text-align: left; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Configure Google to have a calendar for each managed room&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Configure Google to have a calendar for each managed room}</string>
+								</dict>
+							</dict>
+							<dict>
+								<key>contentAlignment</key>
+								<integer>1</integer>
+								<key>fillColor</key>
+								<string>{1.000, 1.000, 1.000, 1.000}</string>
+								<key>isDecreasingBranchThickness</key>
+								<true/>
+								<key>isDrawingFill</key>
+								<false/>
+								<key>isLeftAligned</key>
+								<false/>
+								<key>location</key>
+								<string>{50.14453125, 631.9765625}</string>
+								<key>nodeID</key>
+								<string>4E08230E-5191-4144-874D-02D48157D714</string>
+								<key>strokeColor</key>
+								<string>{0.000, 0.608, 0.847, 1.000}</string>
+								<key>strokeStyle</key>
+								<integer>0</integer>
+								<key>strokeWidth</key>
+								<real>5</real>
+								<key>subnodes</key>
+								<array/>
+								<key>title</key>
+								<dict>
+									<key>constrainedWidth</key>
+									<integer>300</integer>
+									<key>htmlText</key>
+									<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Ensure that Symphony has unique details for the meeting that it can update the google calendar event later&lt;/p&gt;</string>
+									<key>shrinkToFitContent</key>
+									<integer>1</integer>
+									<key>text</key>
+									<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Ensure that Symphony has unique details for the meeting that it can update the google calendar event later}</string>
+								</dict>
+							</dict>
+						</array>
+						<key>title</key>
+						<dict>
+							<key>constrainedWidth</key>
+							<integer>107</integer>
+							<key>htmlText</key>
+							<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Sync Meetings from Symphony&lt;/p&gt;</string>
+							<key>shrinkToFitContent</key>
+							<integer>0</integer>
+							<key>text</key>
+							<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Sync Meetings from Symphony}</string>
+						</dict>
+					</dict>
+				</array>
+				<key>title</key>
+				<dict>
+					<key>constrainedWidth</key>
+					<integer>300</integer>
+					<key>htmlText</key>
+					<string>&lt;p style='color: rgba(0, 0, 0, 1.000000); font: 14px "Helvetica Neue"; -cocoa-font-postscriptname: "HelveticaNeue"; '&gt;Sync Symphony with Google Calendar&lt;/p&gt;</string>
+					<key>shrinkToFitContent</key>
+					<integer>1</integer>
+					<key>text</key>
+					<string>{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs28 \cf2 Sync Symphony with Google Calendar}</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<key>printInfo</key>
+	<data>
+	BAtzdHJlYW10eXBlZIHoA4QBQISEhAtOU1ByaW50SW5mbwGEhAhOU09iamVjdACFkoSE
+	hBNOU011dGFibGVEaWN0aW9uYXJ5AISEDE5TRGljdGlvbmFyeQCUhAFpCJKEhIQITlNT
+	dHJpbmcBlIQBKxZOU0hvcml6b250YWxseUNlbnRlcmVkhpKEhIQITlNOdW1iZXIAhIQH
+	TlNWYWx1ZQCUhAEqhIQBY50BhpKEmZkNTlNSaWdodE1hcmdpboaShJuchIQBZp5IhpKE
+	mZkMTlNMZWZ0TWFyZ2luhpKEm5ygnkiGkoSZmRVOU0hvcml6b25hbFBhZ2luYXRpb26G
+	koSbnISXlwKGkoSZmRROU1ZlcnRpY2FsUGFnaW5hdGlvboaShJucpZcAhpKEmZkUTlNW
+	ZXJ0aWNhbGx5Q2VudGVyZWSGkpqShJmZC05TVG9wTWFyZ2luhpKEm5ygnlqGkoSZmQ5O
+	U0JvdHRvbU1hcmdpboaShJucoJ5ahoaG
+	</data>
+	<key>title</key>
+	<string>Sync Symphony with Google Calendar</string>
+	<key>version</key>
+	<integer>4</integer>
+</dict>
+</plist>

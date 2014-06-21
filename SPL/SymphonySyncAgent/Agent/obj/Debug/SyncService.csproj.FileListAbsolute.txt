@@ -1,0 +1,17 @@
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\obj\Debug\SyncService.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SabreExcelImport.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SymphonyIm.2.4.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SymphonySyncApi.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SabreExcelImport.pdb
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SymphonySyncApi.pdb
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SyncAgent.dll.config
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SyncAgent.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\bin\Debug\SyncAgent.pdb
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\obj\Debug\SyncAgent.dll
+Z:\Downloads\SPL\SabreExcelImport\ServiceSample\obj\Debug\SyncAgent.pdb
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.dll.config
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.dll
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\bin\Debug\SyncAgent.pdb
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncService.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncAgent.dll
+Z:\Downloads\SPL\SymphonySyncAgent\Agent\obj\Debug\SyncAgent.pdb

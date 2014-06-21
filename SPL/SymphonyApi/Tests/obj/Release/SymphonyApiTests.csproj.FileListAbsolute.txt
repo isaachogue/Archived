@@ -1,0 +1,10 @@
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\SymphonyApiTests.dll
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\SymphonyApiTests.pdb
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\nunit.framework.dll
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\SymphonySyncApi.dll
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\SymphonyIm.2.4.dll
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\SymphonySyncApi.pdb
+Z:\Downloads\SPL\SymphonyApi\Tests\bin\Release\nunit.framework.xml
+Z:\Downloads\SPL\SymphonyApi\Tests\obj\Release\SymphonyApiTests.csprojResolveAssemblyReference.cache
+Z:\Downloads\SPL\SymphonyApi\Tests\obj\Release\SymphonyApiTests.dll
+Z:\Downloads\SPL\SymphonyApi\Tests\obj\Release\SymphonyApiTests.pdb
