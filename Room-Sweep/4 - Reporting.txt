@@ -1,0 +1,12 @@
+(4) Reporting
+	Epics:
+		- Daily Sweep report
+			** As the sweep manager services I want to create a daily sweep report so that the last day's room sweep results will be available for dissemination by customer and location
+				- Categorized by account
+				- Codec reachability results
+				- Call stats
+				- Threshold violations or warnings
+		- Report and other information dissemination
+			** As the sweep manager services I want to have the ability to email messages to a pre-configured address so that information can be disseminated in a timely manor
+				- Daily Sweep report
+				- Sweep alerts (threshold violations - P3, device reachability - P1)

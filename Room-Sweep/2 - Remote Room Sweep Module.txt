@@ -1,0 +1,79 @@
+(2) Remote Room Sweep Module
+	Epics:
+		- Sweep Manager
+			** As the sweep manager services I want to periodically poll the RSP hub so that sweep schedules for devices that I am responsible for monitoring will be up-to-date
+				- check for sweeps
+
+					Scenario: Sweep manager is configured to poll the hub on a periodic basis
+					
+						Given the sweep manager is configured to sweep codecs
+						And the sweep manager is configured with a polling interval of 60 seconds
+						When the sweep manager's polling timer completes
+						Then the sweep manager will open a connection to the hub and check for changes to the sweep's details
+						
+					Scenario: Sweep manager locates a new sweep schedule when polling for sweep details for it's configured codecs
+					
+						Given the sweep manager is configured to sweep codecs
+						And the sweep manager is configured with a polling interval of 60 seconds
+						And the sweep manager has no previously scheduled sweeps
+						And the hub has new sweeps that have been added
+						When the sweep manager's polling timer completes
+						Then the sweep manager will open a connection to the hub and check for changes to the sweep's details
+						And the sweep manager will locate the newly scheduled sweeps
+						
+				- update sweep participants based on hub changes
+					Scenario: Sweep manager locates a codec that has been marked as exempt when polling for sweep details for it's configured codecs 
+					
+						Given the sweep manager is configured to sweep codecs
+						And the sweep manager is configured with a polling interval of 60 seconds
+						And the sweep manager has previously scheduled sweeps
+						And the hub has a previously scheduled codec marked as exempt
+						When the sweep manager's polling timer completes
+						Then the sweep manager will open a connection to the hub and check for changes to the sweep's details
+						And the sweep manager will locate the newly exempt codec in the scheduled sweeps
+						And the sweep manager will remove the codec from the scheduled sweeps
+
+					Scenario: Sweep manager locates a new codec that has been added to a sweep when polling for sweep details for it's configured codecs 
+					
+						Given the sweep manager is configured to sweep codecs
+						And the sweep manager is configured with a polling interval of 60 seconds
+						And the sweep manager has previously scheduled sweeps
+						And the hub has a newly scheduled codec included in the sweep
+						When the sweep manager's polling timer completes
+						Then the sweep manager will open a connection to the hub and check for changes to the sweep's details
+						And the sweep manager will locate the newly added codec in the scheduled sweeps
+						And the sweep manager will add the codec into the scheduled sweep
+										
+				- update existing sweep schedules based on hub changes
+					Scenario: Sweep manager locates a schedule change when polling for sweep details for it's configured codecs 
+					
+						Given the sweep manager is configured to sweep codecs
+						And the sweep manager is configured with a polling interval of 60 seconds
+						And the sweep manager has previously scheduled sweeps
+						And the hub has a schedule update for one of the previously scheduled sweeps
+						When the sweep manager's polling timer completes
+						Then the sweep manager will open a connection to the hub and check for changes to the sweep's details
+						And the sweep manager will locate the schedule change in the scheduled sweeps
+						And the sweep manager will update the scheduled sweep to occur at the newly scheduled time that is included in the scheduled sweeps														
+				
+			** As the sweep manager services I want to perform a series of pre-sweep boot-strap tests so that reachability is determined before a sweep is initiated
+				- A connection test to the endpoint (type of ping);
+				- Communications with the endpoint
+			** As the sweep manager services I want to initiate a video call from a managed codec to its identified sweep VMR so that I can perform scheduled sweeps of the Codec
+				- Codec connecting to the MCU
+				- Conference initiation between VMR and the codec
+			** As the sweep manager services I want to poll a codec that is participating in a sweep for stats so that I can monitor the health of the codec, its connection to the VMR, and the media connection between the codec and the MCU for the term of the conference
+				- Poll each device in the sweep for current stats
+				- check stats against configured device thresholds
+				
+		- Polycom HDX Codec sweep API
+			** As the room sweep manager services I want to have the ability to communicate with a Polycom HDX so that I can initiate a connection with a VMR
+			** As the room sweep manager services I want to have the ability to collect call statistics from a Polycom HDX so that I can check the stats for threshold violations
+				- packet loss, frame rate, preferred audio algorithm, 
+					preferred video algorithm, max video format, max bandwidth
+			** As the room sweep manager services I want to have the ability to verify basic communications with a Polycom HDX so that I can verify reachability with the Codec
+			
+		- (Future need) Cisco Codec sweep API
+		- (Future need) LifeSize Codec sweep API
+		- (Future need) Legacy Tandberg Codec sweep API
+

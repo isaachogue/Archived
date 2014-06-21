@@ -1,0 +1,178 @@
+(1) Web-based RSP Management Hub Interface
+	Epics:
+		- User authentication
+			** Anonymous access
+				Scenarios:
+				
+				- Anonymous user access will be granted access to the RSP management hub interface
+
+					Given I navigate to the RSP management hub interface
+					When I try to reach the landing page using anonymous credentials
+					Then I should see that I reach the landing page successfully
+				
+		- RSP Landing page 
+			** As a user of the Room Sweep Platform (RSP) I want to have a landing page with links for available features
+				Scenarios:
+				
+				- Account management
+
+					Given I navigate to the RSP management hub
+					When I reach the landing page
+					Then the landing page should have a link for account management
+					
+				- Account status' ?? 
+
+					Given I navigate to the RSP management hub
+					When I reach the landing page
+					Then the landing page should have a link for account management
+
+				- RSP remote sweep modules
+
+					Given I navigate to the RSP management hub
+					When I reach the landing page
+					Then the landing page should have a link for account management
+			
+		- Device manager (potentially from the BCS Partner API)
+			** As a user of RSP I want to have the ability to manage customer account details so that the RSP is aware of accounts that will have managed devices
+				Scenarios:
+
+				- No customer accounts
+					Given I navigate to the RSP customer management area
+					When there are no customers within the RSP repository
+					Then the RSP customer management area should have a link for adding a new customer
+					
+				- Customer accounts exist in the repository
+					Given I navigate to the RSP customer management area
+					When there are customers within the RSP repository
+					Then the RSP customer management area should have a links for editing each existing customer
+				
+				- Add customer account option selected
+					Given I navigate to the RSP customer management area
+					When I select the link for adding a new customer
+					Then the RSP customer management area should display a form with information for a new customer					
+
+				- Edit customer account option is selected
+					Given I navigate to the RSP customer management area
+					When I select the link for editing an existing customer
+					Then the RSP customer management area should display a form with information for the existing customer					
+					
+				- Remove customer account
+					Given I navigate to the RSP customer management area
+					When I select the link for removing an existing customer
+					Then the RSP customer management area should display a confirmation message asking the user to confirm a desire to remove a customer account and its related data					
+
+				- Remove customer account option to proceed
+					Given I navigate to the RSP customer management area
+					When I select the link for removing an existing customer
+					And the user opts to proceed with removing the customer account and its related data
+					Then the RSP customer management area should close the confirmation message asking the user to confirm a desire to remove a customer account and its related data
+					And the RSP customer repository should locate the account data
+					And the RSP customer repository should delete the data
+					And the RSP customer management area should display the customer management area
+
+				- Remove customer account option to cancel
+					Given I navigate to the RSP customer management area
+					When I select the link for removing an existing customer
+					And the user opts to cancel removing the customer account and its related data
+					Then the RSP customer management area should close the confirmation message asking the user to confirm a desire to remove a customer account and its related data
+					And the RSP customer management area should display the customer management area
+					
+				- Required Customer Account Details are Entered and Data is Saved
+					Given I navigate to the RSP customer management area
+					When I select the link for adding a new customer
+					And the RSP customer management area has displayed a form with information for a customer
+					And I have populated all required fields for a customer with data
+					And I instruct the RSP customer management area to save the customer data
+					Then the RSP customer management area should close the form with information for a customer
+					And the RSP customer repository should store the data that was in the customer form
+					And the RSP customer management area should display the saved customer name
+
+				- Required Customer Account Details are NOT Entered and Data is Not Saved
+					Given I navigate to the RSP customer management area
+					When I select the link for adding a new customer
+					And the RSP customer management area has displayed a form with information for a customer
+					And I have NOT populated all required fields for a customer with data
+					And I instruct the RSP customer management area to save the customer data
+					Then the RSP customer management area should NOT close the form with information for a customer
+					And the RSP customer management area should identify the areas within the customer information form that are required
+		
+			** As a user of the RSP I want to have the ability to manage devices that are available for Room Sweeps so that the RSP is aware of included and available devices
+				Scenarios:
+
+				 - No devices available
+					Given I navigate to the RSP customer management area
+					And there are existing customers stored within the RSP repository
+					When I select the link for viewing an existing customer
+					And the customer selected has no devices stored
+					Then the RSP customer management area should display the information for the Customer
+					And I should see a link for adding a new device to the Customer
+				 
+				 - Add Device
+					Given I am viewing an existing Customer
+					When I select the link for adding a new device to the Customer
+					Then the RSP customer management area should display a form with information for a new Device					
+
+				 - Edit Device
+					Given I am viewing an existing Customer
+					When I select the link for editing a device within the Customer
+					Then the RSP customer management area should display a form with information for the selected Device					
+					
+				 - Required data has been entered and the device is stored
+					Given I navigate to the RSP customer management area
+					When I select the link for adding a new customer
+					And the RSP customer management area has displayed a form with information for a new Device					
+					And I have populated all required fields for a device with data
+					And I instruct the RSP customer management area to save the device data
+					Then the RSP customer management area should close the form with information for a device
+					And the RSP customer repository should store the data that was in the device form
+
+				 - Required data has NOT been entered and the device is stored
+					Given I navigate to the RSP customer management area
+					When I select the link for adding a new customer
+					And the RSP customer management area has displayed a form with information for a new Device					
+					And I have NOT populated all required fields for a device with data
+					And I instruct the RSP customer management area to save the device data
+					Then the RSP customer management area should NOT close the form with information for a device
+					And the RSP device form should identify the areas within the customer information form that are required
+					
+				 - Remove device
+				- Remove device option to proceed
+					Given I navigate to the RSP device management area
+					When I select the link for removing an existing device
+					And the user opts to proceed with removing the device and its related data
+					Then the RSP device management area should close the confirmation message asking the user to confirm a desire to remove a device and its related data
+					And the RSP device repository should locate the device and its related data
+					And the RSP device repository should delete the device and its related data
+					And the RSP device management area should display the device management area
+
+				- Remove device option to cancel
+					Given I navigate to the RSP device management area
+					When I select the link for removing an existing device
+					And the user opts to cancel removing the device and its related data
+					Then the RSP device management area should close the confirmation message asking the user to confirm a desire to remove a Device and its related data
+					And the RSP device management area should be displayed
+				 
+			
+			** As a user of the RSP I want to have the ability to mark a device with a temporary hold from testing so that the device will be omitted from a sweep test
+				Scenarios:
+
+				- Enable hold
+				- Disable hold
+
+			** As a user of the RSP I want to have the ability to manage Remote Sweep Modules so that I can schedule room sweeps within a given RSP module
+				Scenarios:
+
+				- No RSP sweep modules
+				- Add RSP sweep module
+				- Edit RSP sweep module
+				- Remove RSP sweep module
+				
+		- Scheduling Manager- 
+			** As a user of the RSP web interface I want to schedule a room sweep with one or more managed device(s) so that I can configure the devices room sweep schedule
+					- Schedule details: company, endpoint, sweep name, start time, duration, 
+					  email for sweep, vmr conf id, vmr conf pin
+					- Recurrence (daily, weekly, monthly)
+			** As a user of the RSP web interface I want to create a conference within BCS API when I create a meeting within the RSP so that the BCS API and scheduling systems show the room sweep on the published schedule
+					- Create a conference block within the BCS API
+	
+
